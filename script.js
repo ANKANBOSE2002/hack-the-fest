@@ -78,6 +78,7 @@ let textchange=()=>{
     document.getElementById("n").innerText="2";
     document.getElementById("m").innerText="2";
     document.getElementById("sq-brckt-r").innerText="2";
+    document.getElementById("sq-brckt-l").innerText="0";
     document.getElementById("b").innerHTML="0";
 }
 btn.onclick = function load(){
