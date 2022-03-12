@@ -9,17 +9,8 @@ body{
     display: grid;
     place-items: center;
 }
-/* .flexr{
-    display: flex;
-    flex-direction: row;
-}
-.flexc{
-    display: flex;
-    flex-direction: column;
-} */
+
 .keyboard{
-    /* height: 500px;
-    width: 1100px; */
     height: 60vh;
     width: 80vw;
     display: flex;
@@ -50,6 +41,26 @@ body{
     border: 3px solid #000000;
     border-radius: 10px;
     background: #000000;
+}
+
+.containerrgb{  
+    display: grid;
+    width: 98%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "esc one two three four five six seven eight nine sq-brckt-l minus plus clear clear"
+      "tab tab h a c k o v e r f l zero w slash-r"
+      "capslock capslock y s d t g q j i p semicolon quote enter enter"
+      "shift shift z x u sq-brckt-r b n m comma fullstop slash-l shift2 arrow-up delete"
+      "ctrl ctrl fn win alt spacebar spacebar spacebar spacebar spacebar alt2 win2 arrow-left arrow-dwn arrow-right";
+    height: 90%;
+    transition: 75ms;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    background: #000000;    
 }
 .cardslider{
     width: 95%;
@@ -312,10 +323,10 @@ body{
 }
 .rr{
 	box-shadow: 0 0 16px rgba(237, 45, 45,1);
-	animation: rotate-scale-down 0.55s ease-in-out 25ms both, rr 3s linear infinite;
+	animation: rotate-scale-down 0.55s ease-in 25ms both, rr 3s linear infinite;
     background-color: black;
     color: white;
-    /* animation: rotate-scale-down 0.55s ease-in-out 25ms both; */
+    
 }
 @keyframes rr{
 	0% {box-shadow: 0 0 16px rgba(237, 45, 45,1);}
@@ -328,10 +339,10 @@ body{
 }
 .rg{
 	box-shadow: 0 0 16px rgba(43,224,99,1);
-	animation: rotate-scale-down 0.55s ease-in-out 25ms both, rg 3s linear infinite;
+	animation: rotate-scale-down 0.55s ease-in 25ms both, rg 3s linear infinite;
     background-color: black;
     color: white;
-    /* animation: rotate-scale-down 0.55s ease-in-out 25ms both; */
+    
 }
 @keyframes rg{
 	0% {box-shadow: 0 0 16px rgba(43,224,99,1);}
@@ -346,14 +357,14 @@ body{
 	box-shadow: 0 0 16px rgba(43,82,224,1);
     background-color: black;
     color: white;
-    /* animation: rotate-scale-down 0.55s ease-in-out 25ms both; */
+    
 }
 .rgb{
 	box-shadow: 0 0 16px rgba(120,200,208,1);
 	animation: rotate-scale-down 0.55s ease-in-out 25ms both, rgb 3s linear infinite;
     background-color: black;
     color: white;
-    /* animation: rotate-scale-down 0.55s ease-in-out 25ms both; */
+    
 }
 @keyframes rgb{
 	0% {box-shadow: 0 0 16px rgba(120,200,208,1);}
@@ -369,7 +380,7 @@ body{
 	animation: rotate-scale-down 0.55s ease-in-out 25ms both, yellow 3s linear infinite;
     background-color: black;
     color: #fff;
-    /* animation: rotate-scale-down 0.55s ease-in-out 25ms both; */
+    
 }
 @keyframes rotate-scale-down {
     0% {
@@ -403,7 +414,7 @@ body{
 	animation: rotate-scale-down 0.55s ease-in-out 25ms both, rgb4 3s linear infinite;
     background-color: black;
     color: white;
-    /* animation: rotate-scale-down 0.55s ease-in-out 25ms both; */
+    
 }
 @keyframes rgb4{
 	0% {box-shadow: 0 0 16px rgba(224,43,213,1);}
@@ -419,7 +430,7 @@ body{
 	animation: rotate-scale-down 0.55s ease-in-out 25ms both, rgg 3s linear infinite;
     background-color: black;
     color: white;
-    /* animation: rotate-scale-down 0.55s ease-in-out 25ms both; */
+    
 }
 @keyframes rgg{
 	0% {box-shadow: 0 0 16px rgba(224,117,43,1);}
@@ -435,7 +446,7 @@ body{
 	animation: rotate-scale-down 0.55s ease-in-out 25ms both, rgf 3s linear infinite;
     background-color: black;
     color: white;
-    /* animation: rotate-scale-down 0.55s ease-in-out 25ms both; */
+    
 }
 @keyframes rgf{
 	0% {box-shadow: 0 0 16px rgba(224,43,76,1);}
