@@ -32,8 +32,13 @@ linear-gradient(90deg, rgba(178, 206, 254,0) 20%, rgba(178, 206, 254,.3) 20%, rg
 }
 .bg{
     background: #000000;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    filter: blur(10px);
+    /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5); */
+    filter: blur(2px);
+    background-color: #000000;
+opacity: 1;
+background-image:  linear-gradient(30deg, #151517 12%, transparent 12.5%, transparent 87%, #151517 87.5%, #151517), linear-gradient(150deg, #151517 12%, transparent 12.5%, transparent 87%, #151517 87.5%, #151517), linear-gradient(30deg, #151517 12%, transparent 12.5%, transparent 87%, #151517 87.5%, #151517), linear-gradient(150deg, #151517 12%, transparent 12.5%, transparent 87%, #151517 87.5%, #151517), linear-gradient(60deg, #15151777 25%, transparent 25.5%, transparent 75%, #15151777 75%, #15151777), linear-gradient(60deg, #15151777 25%, transparent 25.5%, transparent 75%, #15151777 75%, #15151777);
+background-size: 36px 63px;
+background-position: 0 0, 0 0, 18px 32px, 18px 32px, 0 0, 18px 32px;
 }
 body{
     height: 100vh;
