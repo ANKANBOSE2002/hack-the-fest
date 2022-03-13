@@ -86,5 +86,7 @@ btn.onclick = function load(){
     keyboard.style.backgroundColor="#121212";
     keyboard.style.animation="colorchange 3s linear infinite";
     container.setAttribute("class","containerrgb");
+    document.getElementById("h").animation="heartbeat 1.5s ease-in-out infinite both";
+    document.getElementById("h").fontSize="5rem";
     keyanimations();
 }
