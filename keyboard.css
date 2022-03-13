@@ -75,7 +75,6 @@ body{
     position: absolute;
     bottom: 2.5px;
     left: 0.5%;
-    /* left: 73%; */
     height: 170px;
     width: 250px;
     background-color: #4ff;
@@ -500,22 +499,22 @@ body{
     animation: heartbeat 1.5s ease-in-out infinite both;
     font-weight: 900;
 } 
-.containerrgb .k p{
+.containerrgb .k p,.containerrgb .sq-brckt-r>p{
     color: rgba(43,82,224,1);
     animation: heartbeat 1.5s ease-in-out infinite both;
     font-weight: 900;
 }
-.containerrgb .o p{
+.containerrgb .o p,.containerrgb #b>p{
     color: #4ff;
     animation: heartbeat 1.5s ease-in-out infinite both;
     font-weight: 900;
 } 
-.containerrgb .v p{
+.containerrgb .v p,.containerrgb #n>p{
     color: #4ff;
     animation: heartbeat 1.5s ease-in-out infinite both;
     font-weight: 900;
 }  
-.containerrgb .e p{
+.containerrgb .e p,.containerrgb #m>p{
     color: rgba(43,224,99,1);
     animation: heartbeat 1.5s ease-in-out infinite both;
     font-weight: 900;
@@ -533,7 +532,7 @@ body{
     animation: heartbeat 1.5s ease-in-out infinite both;
     font-weight: 900;
 } 
-.containerrgb .b p{
+.containerrgb .zero p{
     color: rgba(237, 45, 45,1);
     animation: heartbeat 1.5s ease-in-out infinite both;
     font-weight: 900;

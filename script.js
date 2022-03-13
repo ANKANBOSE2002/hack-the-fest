@@ -71,22 +71,22 @@ let keyanimations=()=>{
     textchange();
 }
 let textchange=()=>{
-    document.getElementById("zero").innerText="O";
-    document.getElementById("q").innerText=".";
-    document.getElementById("g").innerText="4";
-    document.getElementById("j").innerText="0";
-    document.getElementById("n").innerText="2";
-    document.getElementById("m").innerText="2";
-    document.getElementById("sq-brckt-r").innerText="2";
-    document.getElementById("sq-brckt-l").innerText="0";
-    document.getElementById("b").innerHTML="0";
+    document.getElementById("zero").innerHTML="<p>O</p>";
+    document.getElementById("q").innerHTML="<p>.</p>";
+    document.getElementById("g").innerHTML="<p>4</p>";
+    document.getElementById("j").innerHTML="<p>O</p>";
+    document.getElementById("n").innerHTML="<p>2</p>";
+    document.getElementById("m").innerHTML="<p>2</p>";
+    document.getElementById("sq-brckt-r").innerHTML="<p>2</p>";
+    document.getElementById("sq-brckt-l").innerHTML="<p>0</p>";
+    document.getElementById("b").innerHTML="<p>0</p>";
 }
 btn.onclick = function load(){
     card.style.height="0px";
     keyboard.style.backgroundColor="#121212";
     keyboard.style.animation="colorchange 3s linear infinite";
     container.setAttribute("class","containerrgb");
-    document.getElementById("h").animation="heartbeat 1.5s ease-in-out infinite both";
-    document.getElementById("h").fontSize="5rem";
+    // document.getElementById("h").animation="heartbeat 1.5s ease-in-out infinite both";
+    // document.getElementById("h").fontSize="5rem";
     keyanimations();
 }
