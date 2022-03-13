@@ -472,11 +472,11 @@ body{
               animation-timing-function: ease-in;
     }
     17% {
-              transform: scale(1.2);
+              transform: scale(1.3);
               animation-timing-function: ease-out;
     }
     33% {
-              transform: scale(1.3);
+              transform: scale(1.4);
               animation-timing-function: ease-in;
     }
     45% {
