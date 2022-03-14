@@ -2,6 +2,9 @@ var btn = document.getElementById("btn");
 var card = document.getElementById("card");
 var keyboard = document.getElementById("keyboard");
 var container = document.getElementById("container");
+var header_right = document.getElementById("header_right");
+var bg = document.getElementById("bg");
+var instruction = document.getElementById("instruction");
 let keyanimations=()=>{
     document.getElementById("esc").classList.add("yellow");
     document.getElementById("one").classList.add("yellow");
@@ -84,8 +87,12 @@ let textchange=()=>{
 btn.onclick = function load(){
     card.style.height="0px";
     keyboard.style.backgroundColor="#121212";
-    keyboard.style.animation="colorchange 3s linear infinite";
+    keyboard.style.animation="colorchange 3s alternate-reverse infinite";
     container.setAttribute("class","containerrgb");
+    bg.setAttribute("class","bg2");
+    header_right.style.opacity="1";
+    instruction.style.opacity="1";
+    btn.style.display="none";
     // document.getElementById("h").animation="heartbeat 1.5s ease-in-out infinite both";
     // document.getElementById("h").fontSize="5rem";
     keyanimations();

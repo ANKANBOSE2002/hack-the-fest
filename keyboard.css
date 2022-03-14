@@ -30,7 +30,13 @@ linear-gradient(90deg, rgba(178, 206, 254,0) 20%, rgba(178, 206, 254,.3) 20%, rg
     min-height: 100%;
     
 }
-.bg{
+.bg2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
     background: #000000;
     /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5); */
     filter: blur(2px);
@@ -40,13 +46,14 @@ background-image:  linear-gradient(30deg, #151517 12%, transparent 12.5%, transp
 background-size: 36px 63px;
 background-position: 0 0, 0 0, 18px 32px, 18px 32px, 0 0, 18px 32px;
 }
-body{
-    height: 100vh;
-    width: 100vw;
+main{
+    position: relative;
+    height: 100%;
+    width: 100%;
     display: grid;
     place-items: center;
-    
 }
+
 .keyboard{
     height: 60vh;
     width: 80vw;
@@ -60,6 +67,17 @@ body{
     position: relative;
     transition: all 0.5s ease-in-out;
     transform: translateY(20%);
+    z-index: 10;
+}
+.keyboard .instructions{
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    opacity: 0;
+    color: #919191;
     z-index: 10;
 }
 .container{  
@@ -795,6 +813,58 @@ body{
     font-size:1.5rem;
     opacity:1;
 } 
-
+.header_right{
+    width: 90%;
+    display: block;
+    opacity: 0;
+    margin-left: 200px;
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+.header_right .tab{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+.header_right .tab a{
+    text-decoration: none;
+    margin: 0 15px;
+    border-radius: 10px;
+    background-color: #000000;
+    /* background: linear-gradient(145deg, #202020, #0c0a0a); */
+    color: #919191;
+    padding:15px 15px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;  
+    box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* opacity: 0.8; */
+}
+.header_right .tab a p{
+    font-size:0.9rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+}
+.header_right .tab a:hover p{
+    font-size: 1rem;
+    opacity: 1;
+}
+.header_right .tab a:hover{
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+    animation: colorchange 3s alternate-reverse infinite;
+    color: #fff;
+    /* opacity: 1; */
+}
 
     
