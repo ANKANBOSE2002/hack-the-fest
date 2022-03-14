@@ -72,6 +72,10 @@ let keyanimations=()=>{
     document.getElementById("alt2").classList.add("rgb4");
     document.getElementById("spacebar").classList.add("rgb");
     textchange();
+    document.addEventListener('keydown', sound);
+}
+let sound=()=>{
+    document.getElementById('audio').play();
 }
 let textchange=()=>{
     document.getElementById("zero").innerHTML="<p>O</p>";
@@ -93,7 +97,5 @@ btn.onclick = function load(){
     header_right.style.opacity="1";
     instruction.style.opacity="1";
     btn.style.display="none";
-    // document.getElementById("h").animation="heartbeat 1.5s ease-in-out infinite both";
-    // document.getElementById("h").fontSize="5rem";
     keyanimations();
 }
