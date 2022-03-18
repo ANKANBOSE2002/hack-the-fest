@@ -72,7 +72,6 @@ let keyanimations=()=>{
     document.getElementById("alt2").classList.add("rgb4");
     document.getElementById("spacebar").classList.add("rgb");
     textchange();
-    document.addEventListener('keydown', sound);
 }
 let sound=()=>{
     document.getElementById('audio').play();
