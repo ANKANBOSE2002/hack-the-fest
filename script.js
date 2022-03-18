@@ -21,6 +21,7 @@ let keyanimations=()=>{
     document.getElementById("plus").classList.add("rgb4");
     document.getElementById("clear").classList.add("rgb4");
     document.getElementById("tab").classList.add("yellow");
+    document.getElementById("ghost").classList.add("yellow");
     document.getElementById("q").classList.add("rr");
     document.getElementById("w").classList.add("rr");
     document.getElementById("e").classList.add("rr");
@@ -77,19 +78,20 @@ let sound=()=>{
     document.getElementById('audio').play();
 }
 let textchange=()=>{
-    document.getElementById("q").innerHTML="<p>H</p>";
-    document.getElementById("w").innerHTML="<p>A</p>";
-    document.getElementById("e").innerHTML="<p>C</p>";
-    document.getElementById("r").innerHTML="<p>K</p>";
-    document.getElementById("t").innerHTML="<p>-</p>";
-    document.getElementById("y").innerHTML="<p>T</p>";
-    document.getElementById("u").innerHTML="<p>H</p>";
-    document.getElementById("i").innerHTML="<p>E</p>";
-    document.getElementById("o").innerHTML="<p>-</p>";
-    document.getElementById("p").innerHTML="<p>F</p>";
-    document.getElementById("sq-brckt-l").innerHTML="<p>E</p>";
-    document.getElementById("sq-brckt-r").innerHTML="<p>S</p>";
-    document.getElementById("slash-l").innerHTML="<p>T</p>";
+    document.getElementById("ghost").innerHTML="<p>H</p>";
+    document.getElementById("q").innerHTML="<p>A</p>";
+    document.getElementById("w").innerHTML="<p>C</p>";
+    document.getElementById("e").innerHTML="<p>K</p>";
+    document.getElementById("r").innerHTML="<p>-</p>";
+    document.getElementById("t").innerHTML="<p>T</p>";
+    document.getElementById("y").innerHTML="<p>H</p>";
+    document.getElementById("u").innerHTML="<p>E</p>";
+    document.getElementById("i").innerHTML="<p>-</p>";
+    document.getElementById("o").innerHTML="<p>F</p>";
+    document.getElementById("p").innerHTML="<p>E</p>";
+    document.getElementById("sq-brckt-l").innerHTML="<p>S</p>";
+    document.getElementById("sq-brckt-r").innerHTML="<p>T</p>";
+    // document.getElementById("slash-l").innerHTML="<p>4</p>";
     document.getElementById("g").innerHTML="<p>4</p>";
     document.getElementById("h").innerHTML="<p>.</p>";
     document.getElementById("j").innerHTML="<p>0</p>";

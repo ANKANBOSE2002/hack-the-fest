@@ -98,7 +98,9 @@ main{
     border-radius: 10px;
     background: #464646;
 }
-
+.container>#ghost{
+    display: none;
+}
 .containerrgb{  
     display: grid;
     width: 98%;
@@ -108,7 +110,7 @@ main{
     grid-auto-flow: row;
     grid-template-areas:
       "esc one two three four five six seven eight nine zero minus plus clear clear"
-      "tab tab q w e r t y u i o p sq-brckt-l sq-brckt-r slash-l"
+      "tab ghost q w e r t y u i o p sq-brckt-l sq-brckt-r slash-l"
       "capslock capslock a s d f g h j k l semicolon quote enter enter"
       "shift shift z x c v b n m comma fullstop slash-r shift2 arrow-up delete"
       "ctrl ctrl fn win alt spacebar spacebar spacebar spacebar spacebar alt2 win2 arrow-left arrow-dwn arrow-right";
@@ -546,10 +548,10 @@ main{
     /* animation: move 35s linear infinite; */
 }
   .containerrgb .q p,.containerrgb .w p,.containerrgb .e p,.containerrgb .r p,.containerrgb .t p,
-  .containerrgb .y p,.containerrgb .u p,.containerrgb .i p,.containerrgb .o p,
-  .containerrgb .p p,.containerrgb .sq-brckt-l p,.containerrgb .sq-brckt-r p,.containerrgb .slash-l p,
-  .containerrgb .g p,.containerrgb .h p,.containerrgb .j p,.containerrgb .b p,.containerrgb .n p,.containerrgb .m p,
-  .containerrgb .comma p{
+  .containerrgb .y p,.containerrgb .u p,.containerrgb .i p,.containerrgb .o p,.containerrgb .j p,
+  .containerrgb .p p,.containerrgb .sq-brckt-l p,.containerrgb .sq-brckt-r p,.containerrgb .ghost p,
+  .containerrgb .g p,.containerrgb .h p,.containerrgb .n p,.containerrgb .m p,.containerrgb .comma p,
+  .containerrgb .b p{
     /* background-image: 
     linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
      */
@@ -619,7 +621,6 @@ main{
     box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
     animation: colorchange 3s alternate-reverse infinite;
     color: #fff;
-    /* opacity: 1; */
 }
 
     
