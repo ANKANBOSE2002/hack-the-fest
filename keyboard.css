@@ -38,13 +38,10 @@ linear-gradient(90deg, rgba(178, 206, 254,0) 20%, rgba(178, 206, 254,.3) 20%, rg
     width: 100%;
     z-index: 2;
     background: #000000;
-    /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5); */
     filter: blur(2px);
-    background-color: #000000;
-opacity: 1;
-background-image:  linear-gradient(30deg, #151517 12%, transparent 12.5%, transparent 87%, #151517 87.5%, #151517), linear-gradient(150deg, #151517 12%, transparent 12.5%, transparent 87%, #151517 87.5%, #151517), linear-gradient(30deg, #151517 12%, transparent 12.5%, transparent 87%, #151517 87.5%, #151517), linear-gradient(150deg, #151517 12%, transparent 12.5%, transparent 87%, #151517 87.5%, #151517), linear-gradient(60deg, #15151777 25%, transparent 25.5%, transparent 75%, #15151777 75%, #15151777), linear-gradient(60deg, #15151777 25%, transparent 25.5%, transparent 75%, #15151777 75%, #15151777);
-background-size: 36px 63px;
-background-position: 0 0, 0 0, 18px 32px, 18px 32px, 0 0, 18px 32px;
+    background-image: url("https://2.bp.blogspot.com/-5hzBiWsKDXo/V_04uFbYzBI/AAAAAAAAaC0/KoqIqSb7N5g6NN_SRWcamitE48a_OPrxgCEw/s1600/giphy-2.gif");
+    background-size: 100% 135%;
+    background-position: center;
 }
 main{
     position: relative;
@@ -548,9 +545,9 @@ main{
     /* animation: move 35s linear infinite; */
 }
   .containerrgb .q p,.containerrgb .w p,.containerrgb .e p,.containerrgb .r p,.containerrgb .t p,
-  .containerrgb .y p,.containerrgb .u p,.containerrgb .i p,.containerrgb .o p,.containerrgb .j p,
-  .containerrgb .p p,.containerrgb .sq-brckt-l p,.containerrgb .sq-brckt-r p,.containerrgb .ghost p,
-  .containerrgb .g p,.containerrgb .h p,.containerrgb .n p,.containerrgb .m p,.containerrgb .comma p,
+  .containerrgb .y p,.containerrgb .u p,.containerrgb .i p,.containerrgb .o p,.containerrgb .p p,
+  .containerrgb .sq-brckt-l p,.containerrgb .sq-brckt-r p,.containerrgb .ghost p,
+  .containerrgb .m p,.containerrgb .n p,.containerrgb .comma p,
   .containerrgb .b p{
     /* background-image: 
     linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 

@@ -99,10 +99,9 @@ let textchange=()=>{
     document.getElementById("p").innerHTML="<p>E</p>";
     document.getElementById("sq-brckt-l").innerHTML="<p>S</p>";
     document.getElementById("sq-brckt-r").innerHTML="<p>T</p>";
-    // document.getElementById("slash-l").innerHTML="<p>4</p>";
-    document.getElementById("g").innerHTML="<p>4</p>";
-    document.getElementById("h").innerHTML="<p>.</p>";
-    document.getElementById("j").innerHTML="<p>0</p>";
+    // document.getElementById("g").innerHTML="<p>2</p>";
+    // document.getElementById("h").innerHTML="<p></p>";
+    // document.getElementById("j").innerHTML="<p>0</p>";
     document.getElementById("b").innerHTML="<p>2</p>";
     document.getElementById("n").innerHTML="<p>0</p>";
     document.getElementById("m").innerHTML="<p>2</p>";
