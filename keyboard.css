@@ -108,8 +108,8 @@ main{
     grid-auto-flow: row;
     grid-template-areas:
       "esc one two three four five six seven eight nine sq-brckt-l minus plus clear clear"
-      "tab tab h a c k o v e r f l zero w slash-r"
-      "capslock capslock y s d t g q j i p semicolon quote enter enter"
+      "tab tab h a c k w t v e slash-r f r s zero "
+      "capslock capslock y l d o g q j i p semicolon quote enter enter"
       "shift shift z x u sq-brckt-r b n m comma fullstop slash-l shift2 arrow-up delete"
       "ctrl ctrl fn win alt spacebar spacebar spacebar spacebar spacebar alt2 win2 arrow-left arrow-dwn arrow-right";
     height: 90%;
@@ -617,7 +617,7 @@ main{
     font-size:1.5rem;
     opacity:1;
 }
-.containerrgb .o p,.containerrgb #b>p{
+.containerrgb .s p,.containerrgb #b>p{
     /* background-image: 
     linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
      */
@@ -705,7 +705,7 @@ main{
     font-size:1.5rem;
     opacity:1;
 } 
-.containerrgb .l p{
+.containerrgb .t p{
     /* background-image: 
     linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
      */
@@ -741,7 +741,7 @@ main{
     font-size:1.5rem;
     opacity:1;
 } 
-.containerrgb .w p{
+.containerrgb .w p,.containerrgb .slash-r p{
     /* background-image: 
     linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
      */

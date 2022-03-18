@@ -78,9 +78,13 @@ let sound=()=>{
     document.getElementById('audio').play();
 }
 let textchange=()=>{
-    document.getElementById("zero").innerHTML="<p>O</p>";
+    document.getElementById("zero").innerHTML="<p>T</p>";
+    document.getElementById("slash-r").innerHTML="<p>-</p>";
     document.getElementById("q").innerHTML="<p>.</p>";
     document.getElementById("g").innerHTML="<p>4</p>";
+    document.getElementById("w").innerHTML="<p>-</p>";
+    document.getElementById("v").innerHTML="<p>H</p>";
+    document.getElementById("r").innerHTML="<p>E</p>";
     document.getElementById("j").innerHTML="<p>O</p>";
     document.getElementById("n").innerHTML="<p>2</p>";
     document.getElementById("m").innerHTML="<p>2</p>";
