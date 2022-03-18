@@ -78,19 +78,26 @@ let sound=()=>{
     document.getElementById('audio').play();
 }
 let textchange=()=>{
-    document.getElementById("zero").innerHTML="<p>T</p>";
-    document.getElementById("slash-r").innerHTML="<p>-</p>";
-    document.getElementById("q").innerHTML="<p>.</p>";
+    document.getElementById("q").innerHTML="<p>H</p>";
+    document.getElementById("w").innerHTML="<p>A</p>";
+    document.getElementById("e").innerHTML="<p>C</p>";
+    document.getElementById("r").innerHTML="<p>K</p>";
+    document.getElementById("t").innerHTML="<p>-</p>";
+    document.getElementById("y").innerHTML="<p>T</p>";
+    document.getElementById("u").innerHTML="<p>H</p>";
+    document.getElementById("i").innerHTML="<p>E</p>";
+    document.getElementById("o").innerHTML="<p>-</p>";
+    document.getElementById("p").innerHTML="<p>F</p>";
+    document.getElementById("sq-brckt-l").innerHTML="<p>E</p>";
+    document.getElementById("sq-brckt-r").innerHTML="<p>S</p>";
+    document.getElementById("slash-l").innerHTML="<p>T</p>";
     document.getElementById("g").innerHTML="<p>4</p>";
-    document.getElementById("w").innerHTML="<p>-</p>";
-    document.getElementById("v").innerHTML="<p>H</p>";
-    document.getElementById("r").innerHTML="<p>E</p>";
-    document.getElementById("j").innerHTML="<p>O</p>";
-    document.getElementById("n").innerHTML="<p>2</p>";
+    document.getElementById("h").innerHTML="<p>.</p>";
+    document.getElementById("j").innerHTML="<p>0</p>";
+    document.getElementById("b").innerHTML="<p>2</p>";
+    document.getElementById("n").innerHTML="<p>0</p>";
     document.getElementById("m").innerHTML="<p>2</p>";
-    document.getElementById("sq-brckt-r").innerHTML="<p>2</p>";
-    document.getElementById("sq-brckt-l").innerHTML="<p>0</p>";
-    document.getElementById("b").innerHTML="<p>0</p>";
+    document.getElementById("comma").innerHTML="<p>2</p>";
 }
 btn.onclick = function load(){
     card.style.height="0px";

@@ -107,10 +107,10 @@ main{
     gap: 5px 5px;
     grid-auto-flow: row;
     grid-template-areas:
-      "esc one two three four five six seven eight nine sq-brckt-l minus plus clear clear"
-      "tab tab h a c k w t v e slash-r f r s zero "
-      "capslock capslock y l d o g q j i p semicolon quote enter enter"
-      "shift shift z x u sq-brckt-r b n m comma fullstop slash-l shift2 arrow-up delete"
+      "esc one two three four five six seven eight nine zero minus plus clear clear"
+      "tab tab q w e r t y u i o p sq-brckt-l sq-brckt-r slash-l"
+      "capslock capslock a s d f g h j k l semicolon quote enter enter"
+      "shift shift z x c v b n m comma fullstop slash-r shift2 arrow-up delete"
       "ctrl ctrl fn win alt spacebar spacebar spacebar spacebar spacebar alt2 win2 arrow-left arrow-dwn arrow-right";
     height: 90%;
     transition: 75ms;
@@ -545,25 +545,11 @@ main{
     opacity: 0.4;
     /* animation: move 35s linear infinite; */
 }
-  .containerrgb .h p{
-    /* background-image: 
-    linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
-     */
-    
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
-    background-size: 70px 70px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;   
-    /* color: rgba(224,43,213,1); */
-      animation: heartbeat 1.5s ease-in-out infinite both;
-      font-weight: 900;
-      font-size:1.5rem;
-      opacity:1;
-  } 
-  .containerrgb .a p{
+  .containerrgb .q p,.containerrgb .w p,.containerrgb .e p,.containerrgb .r p,.containerrgb .t p,
+  .containerrgb .y p,.containerrgb .u p,.containerrgb .i p,.containerrgb .o p,
+  .containerrgb .p p,.containerrgb .sq-brckt-l p,.containerrgb .sq-brckt-r p,.containerrgb .slash-l p,
+  .containerrgb .g p,.containerrgb .h p,.containerrgb .j p,.containerrgb .b p,.containerrgb .n p,.containerrgb .m p,
+  .containerrgb .comma p{
     /* background-image: 
     linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
      */
@@ -581,238 +567,7 @@ main{
     font-size:1.5rem;
     opacity:1;
 } 
-.containerrgb .c p{
-    /* background-image: 
-    linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
-     */
-    
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
-    background-size: 70px 70px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    /* color: rgba(43,82,224,1); */
-    animation: heartbeat 1.5s ease-in-out infinite both;
-    font-weight: 900;
-    font-size:1.5rem;
-    opacity:1;
-} 
-.containerrgb .k p,.containerrgb .sq-brckt-r>p{
-    /* background-image: 
-    linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
-     */
-    
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
-    background-size: 70px 70px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    /* color: rgba(43,82,224,1); */
-    animation: heartbeat 1.5s ease-in-out infinite both;
-    font-weight: 900;
-    font-size:1.5rem;
-    opacity:1;
-}
-.containerrgb .s p,.containerrgb #b>p{
-    /* background-image: 
-    linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
-     */
-    
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
-    background-size: 70px 70px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    /* color: #4ff; */
-    animation: heartbeat 1.5s ease-in-out infinite both;
-    font-weight: 900;
-    font-size:1.5rem;
-    opacity:1;
-} 
-.containerrgb .v p,.containerrgb #n>p{
-    /* background-image: 
-    linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
-     */
-    
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
-    background-size: 70px 70px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    /* color: #4ff; */
-    animation: heartbeat 1.5s ease-in-out infinite both;
-    font-weight: 900;
-    font-size:1.5rem;
-    opacity:1;
-}  
-.containerrgb .e p,.containerrgb #m>p{
-    /* background-image: 
-    linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
-     */
-    
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
-    background-size: 70px 70px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    /* color: rgba(43,224,99,1); */
-    animation: heartbeat 1.5s ease-in-out infinite both;
-    font-weight: 900;
-    font-size:1.5rem;
-    opacity:1;
-} .containerrgb .r p{
-    /* background-image: 
-    linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
-     */
-    
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
-    background-size: 70px 70px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    /* color: rgba(43,224,99,1); */
-    animation: heartbeat 1.5s ease-in-out infinite both;
-    font-weight: 900;
-    font-size:1.5rem;
-    opacity:1;
-} .containerrgb .f p{
-    /* background-image: 
-    linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
-     */
-    
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
-    background-size: 70px 70px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    /* color: #f1f424; */
-    animation: heartbeat 1.5s ease-in-out infinite both;
-    font-weight: 900;
-    font-size:1.5rem;
-    opacity:1;
-} 
-.containerrgb .t p{
-    /* background-image: 
-    linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
-     */
-    
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
-    background-size: 70px 70px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    /* color: #f1f424; */
-    animation: heartbeat 1.5s ease-in-out infinite both;
-    font-weight: 900;
-    font-size:1.5rem;
-    opacity:1;
-} 
-.containerrgb .zero p{
-    /* background-image: 
-    linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
-     */
-    
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
-    background-size: 70px 70px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    /* color: rgba(237, 45, 45,1); */
-    animation: heartbeat 1.5s ease-in-out infinite both;
-    font-weight: 900;
-    font-size:1.5rem;
-    opacity:1;
-} 
-.containerrgb .w p,.containerrgb .slash-r p{
-    /* background-image: 
-    linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
-     */
-    
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
-    background-size: 70px 70px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    /* color: rgba(224,43,76,1); */
-    animation: heartbeat 1.5s ease-in-out infinite both;
-    font-weight: 900;
-    font-size:1.5rem;
-    opacity:1;
-} 
-.containerrgb .g p{
-    /* background-image: 
-    linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
-     */
-    
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
-    background-size: 70px 70px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    /* color: #4ff; */
-    animation: heartbeat 1.5s ease-in-out infinite both;
-    font-weight: 900;
-    font-size:1.5rem;
-    opacity:1;
-} 
-.containerrgb .q p{
-    /* background-image: 
-    linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
-     */
-    
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
-    background-size: 70px 70px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    /* color: #4ff; */
-    animation: heartbeat 1.5s ease-in-out infinite both;
-    font-weight: 900;
-    font-size:1.5rem;
-    opacity:1;
-} 
-.containerrgb .j p{
-    /* background-image: 
-    linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
-     */
-    
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
-    background-size: 70px 70px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    /* color: rgba(43,224,99,1); */
-    animation: heartbeat 1.5s ease-in-out infinite both;
-    font-weight: 900;
-    font-size:1.5rem;
-    opacity:1;
-} 
+
 .header_right{
     width: 90%;
     display: block;
