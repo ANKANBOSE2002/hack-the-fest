@@ -562,6 +562,7 @@ main{
     /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
     background-size: 70px 70px;
     -webkit-background-clip: text;
+    background-clip:text;
     -webkit-text-fill-color: transparent; 
     /* color: rgba(224,43,213,1); */
     animation: heartbeat 1.5s ease-in-out infinite both;

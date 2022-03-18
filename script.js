@@ -73,6 +73,14 @@ let keyanimations=()=>{
     document.getElementById("alt2").classList.add("rgb4");
     document.getElementById("spacebar").classList.add("rgb");
     textchange();
+    triggerSound();
+}
+let triggerSound=()=>{
+    
+    document.querySelector("body").addEventListener('keydown', (e) => {
+        //   console.log(`${e.key}`);
+          if(e.key=="h"||e.key=="a"||e.key=="c"||e.key=="k"||e.key=="t"||e.key=="e"||e.key=="f"||e.key=="s"||e.key=="t")sound();
+      });
 }
 let sound=()=>{
     document.getElementById('audio').play();
