@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: grid;
     place-items: center;
     position: relative;
+}
+body main{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 .bg{
     position: absolute;
@@ -39,14 +44,17 @@ linear-gradient(90deg, rgba(178, 206, 254,0) 20%, rgba(178, 206, 254,.3) 20%, rg
     z-index: 2;
     background: #000000;
     filter: blur(2px);
-    background-image: url("https://www.dropbox.com/s/fg9c4oarpugcr0h/ezgif.com-gif-maker.gif?dl=1");
-    background-size: 100% 135%;
+    /* background-image: url("https://www.dropbox.com/s/fg9c4oarpugcr0h/ezgif.com-gif-maker.gif?dl=1"); */
+    /* background-image: url("https://media1.giphy.com/media/xUOxficoMEPD6BPZII/giphy.gif?cid=790b7611797d8ab7deab88a4cf0b69757ca6f2f961aef5e1&rid=giphy.gif&ct=g"); */
+    background-image: url("https://media0.giphy.com/media/lRR3VWjUMXh3wbuo32/giphy.gif?cid=790b76111a0f9a49d662b7cde6a48a4d0f296f08ade9cd8e&rid=giphy.gif&ct=g");
+    /* background-image: url("https://thumbs.gfycat.com/MeatyYellowBlackrussianterrier-size_restricted.gif"); */
+    background-size: 100% 100%;
     background-position: center;
 }
 main{
     position: relative;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: grid;
     place-items: center;
 }
@@ -548,7 +556,7 @@ main{
   .containerrgb .y p,.containerrgb .u p,.containerrgb .i p,.containerrgb .o p,.containerrgb .p p,
   .containerrgb .sq-brckt-l p,.containerrgb .sq-brckt-r p,.containerrgb .ghost p,
   .containerrgb .m p,.containerrgb .n p,.containerrgb .comma p,
-  .containerrgb .b p{
+  .containerrgb .b p, .containerrgb .v p{
     /* background-image: 
     linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
      */
@@ -576,7 +584,8 @@ main{
     position: absolute;
     top: 25px;
     right: 45px;
-    z-index: 10;
+    z-index: -1;
+    /* z-index: 10; */
     transition: all 0.5s ease-in-out;
 }
 .header_right .tab{
@@ -603,6 +612,9 @@ main{
     font-size: 1.2rem;
     font-weight: 500;
     /* opacity: 0.8; */
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+    animation: colorchange 3s alternate-reverse infinite;
+    box-shadow: 0 0 16px rgba(237, 45, 45,1);
 }
 .header_right .tab a p{
     font-size:0.9rem;

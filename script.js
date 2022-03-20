@@ -102,8 +102,9 @@ let textchange=()=>{
     // document.getElementById("g").innerHTML="<p>2</p>";
     // document.getElementById("h").innerHTML="<p></p>";
     // document.getElementById("j").innerHTML="<p>0</p>";
-    document.getElementById("b").innerHTML="<p>2</p>";
-    document.getElementById("n").innerHTML="<p>0</p>";
+    document.getElementById("v").innerHTML="<p>2</p>";
+    document.getElementById("b").innerHTML="<p>0</p>";
+    document.getElementById("n").innerHTML="<p>-</p>";
     document.getElementById("m").innerHTML="<p>2</p>";
     document.getElementById("comma").innerHTML="<p>2</p>";
 }
@@ -111,9 +112,11 @@ btn.onclick = function load(){
     card.style.height="0px";
     keyboard.style.backgroundColor="#121212";
     keyboard.style.animation="colorchange 3s alternate-reverse infinite";
+    keyboard.style.boxShadow= "0 0 16px rgba(237, 45, 45,1)";
     container.setAttribute("class","containerrgb");
     bg.setAttribute("class","bg2");
     header_right.style.opacity="1";
+    header_right.style.zIndex="10";
     instruction.style.opacity="1";
     btn.style.display="none";
     keyanimations();
