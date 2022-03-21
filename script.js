@@ -5,6 +5,7 @@ var container = document.getElementById("container");
 var header_right = document.getElementById("header_right");
 var bg = document.getElementById("bg");
 var instruction = document.getElementById("instruction");
+var cardp = document.getElementById("cardp");
 let keyanimations=()=>{
     document.getElementById("esc").classList.add("yellow");
     document.getElementById("one").classList.add("yellow");
@@ -119,5 +120,6 @@ btn.onclick = function load(){
     header_right.style.zIndex="10";
     instruction.style.opacity="1";
     btn.style.display="none";
+    cardp.style.display="none";
     keyanimations();
 }
