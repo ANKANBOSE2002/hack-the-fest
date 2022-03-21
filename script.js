@@ -104,9 +104,9 @@ let textchange=()=>{
     // document.getElementById("j").innerHTML="<p>0</p>";
     document.getElementById("v").innerHTML="<p>2</p>";
     document.getElementById("b").innerHTML="<p>0</p>";
-    document.getElementById("n").innerHTML="<p>-</p>";
+    document.getElementById("n").innerHTML="<p>2</p>";
     document.getElementById("m").innerHTML="<p>2</p>";
-    document.getElementById("comma").innerHTML="<p>2</p>";
+    document.getElementById("comma").innerHTML="<p>!</p>";
 }
 btn.onclick = function load(){
     card.style.height="0px";
