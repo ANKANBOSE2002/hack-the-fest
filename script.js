@@ -6,6 +6,18 @@ var header_right = document.getElementById("header_right");
 var bg = document.getElementById("bg");
 var instruction = document.getElementById("instruction");
 var cardp = document.getElementById("cardp");
+window.addEventListener("load", function(){
+    var delayInMilliseconds = 2000; 
+
+    setTimeout(function() {
+      load();
+    }, delayInMilliseconds);
+});
+let loadSound=()=>{
+    // alert("check console");
+    console.log("dont open this link");
+    console.log("https://www.youtube.com/watch?v=xvFZjo5PgG0");
+}
 let keyanimations=()=>{
     document.getElementById("esc").classList.add("yellow");
     document.getElementById("one").classList.add("yellow");
@@ -108,7 +120,7 @@ let textchange=()=>{
     document.getElementById("m").innerHTML="<p>2</p>";
     document.getElementById("comma").innerHTML="<p>!</p>";
 }
-btn.onclick = function load(){
+function load(){
     card.style.height="0px";
     keyboard.style.backgroundColor="#121212";
     keyboard.style.animation="colorchange 3s alternate-reverse infinite";
@@ -118,7 +130,7 @@ btn.onclick = function load(){
     header_right.style.opacity="1";
     header_right.style.zIndex="10";
     instruction.style.opacity="1";
-    btn.style.display="none";
     cardp.style.display="none";
+    loadSound();
     keyanimations();
 }
