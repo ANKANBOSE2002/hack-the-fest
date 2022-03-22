@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="./keyboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.js"></script>
 </head>
 <body>
+   
     <main>
         <audio id="audio" controls style="display:none">
-            <source src="./key2.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            <source src="./key.mp3" type="audio/mpeg"> Your browser does not support the audio element.
           </audio>
+          
         <div class="bg" id="bg"></div>
         <div class="keyboard" id="keyboard">
             <div class="container" id="container">
@@ -31,7 +34,7 @@
                 <div class="key plus" id="plus"><p>+</p></div>
                 <div class="key clear" id="clear"><p><i class="fas fa-backspace"></i></p></div>
                 <div class="key tab" id="tab"><p><i class="fas fa-sign-in-alt"></i></p></div>
-                <div class="key ghost" onclick="sound()" id="ghost"><p>K</p></div>
+                <div class="key ghost" id="ghost"><p><i class="fas fa-sign-in-alt"></i></p></div>
                 <div class="key q" onclick="sound()" id="q"><p>Q</p></div>
                 <div class="key w" onclick="sound()" id="w"><p>W</p></div>
                 <div class="key e" onclick="sound()" id="e"><p>E</p></div>
@@ -84,7 +87,9 @@
                 <div class="key spacebar" id="spacebar"></div>
             </div>
             <div class="cardslider">
-                <div class="card" id="card"></div>
+                <div class="card" id="card">
+                    <b id="cardp" data-text="HackOverflow Society Presents">HackOverflow Society Presents</b>
+                </div>
             </div>
             <div class="instructions" id="instruction">
                 <marquee behavior="scroll" direction="left" scrollamount="12" scrolldelay="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed posuere elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed posuere elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed posuere elit.</marquee>
@@ -98,8 +103,6 @@
                 <a href="#sponsors"><p>SPONSORS</p></a>
             </div>
         </div>
-        <div class="btn" id="btn">
-
         </div>
     </main>
     <script src="./script.js"></script>

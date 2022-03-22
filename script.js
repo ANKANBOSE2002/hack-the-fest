@@ -1,10 +1,26 @@
-var btn = document.getElementById("btn");
+// var btn = document.getElementById("btn");
 var card = document.getElementById("card");
 var keyboard = document.getElementById("keyboard");
 var container = document.getElementById("container");
 var header_right = document.getElementById("header_right");
 var bg = document.getElementById("bg");
 var instruction = document.getElementById("instruction");
+var cardp = document.getElementById("cardp");
+var song = new Howl({
+    // src:"https://dl.dropbox.com/s/53vklwjxkbc5yfd/nightcore%20hey%20brother%20%20switching%20vocals%20%20%20lyrics.mp3?dl=1"
+  src:"./error.mp3",
+  autoplay: true});
+window.addEventListener("load", function(){
+    var delayInMilliseconds = 2000; 
+    setTimeout(function() {
+      load();
+    }, delayInMilliseconds);
+});
+
+let loadSound=()=>{
+    console.log(song);
+    song.play();  
+}
 let keyanimations=()=>{
     document.getElementById("esc").classList.add("yellow");
     document.getElementById("one").classList.add("yellow");
@@ -78,7 +94,6 @@ let keyanimations=()=>{
 let triggerSound=()=>{
     
     document.querySelector("body").addEventListener('keydown', (e) => {
-        //   console.log(`${e.key}`);
           if(e.key=="h"||e.key=="a"||e.key=="c"||e.key=="k"||e.key=="t"||e.key=="e"||e.key=="f"||e.key=="s"||e.key=="t")sound();
       });
 }
@@ -102,19 +117,24 @@ let textchange=()=>{
     // document.getElementById("g").innerHTML="<p>2</p>";
     // document.getElementById("h").innerHTML="<p></p>";
     // document.getElementById("j").innerHTML="<p>0</p>";
-    document.getElementById("b").innerHTML="<p>2</p>";
-    document.getElementById("n").innerHTML="<p>0</p>";
+    document.getElementById("v").innerHTML="<p>2</p>";
+    document.getElementById("b").innerHTML="<p>0</p>";
+    document.getElementById("n").innerHTML="<p>2</p>";
     document.getElementById("m").innerHTML="<p>2</p>";
-    document.getElementById("comma").innerHTML="<p>2</p>";
+    document.getElementById("comma").innerHTML="<p>!</p>";
 }
-btn.onclick = function load(){
+function load(){
+    document.querySelector("body").click();
+    loadSound();
     card.style.height="0px";
     keyboard.style.backgroundColor="#121212";
     keyboard.style.animation="colorchange 3s alternate-reverse infinite";
+    keyboard.style.boxShadow= "0 0 16px rgba(237, 45, 45,1)";
     container.setAttribute("class","containerrgb");
     bg.setAttribute("class","bg2");
     header_right.style.opacity="1";
+    header_right.style.zIndex="10";
     instruction.style.opacity="1";
-    btn.style.display="none";
+    cardp.style.display="none";
     keyanimations();
 }
