@@ -6,10 +6,10 @@ var header_right = document.getElementById("header_right");
 var bg = document.getElementById("bg");
 var instruction = document.getElementById("instruction");
 var cardp = document.getElementById("cardp");
-var song = new Howl({
-    // src:"https://dl.dropbox.com/s/53vklwjxkbc5yfd/nightcore%20hey%20brother%20%20switching%20vocals%20%20%20lyrics.mp3?dl=1"
-  src:"./error.mp3",
-  autoplay: true});
+// var song = new Howl({
+//     // src:"https://dl.dropbox.com/s/53vklwjxkbc5yfd/nightcore%20hey%20brother%20%20switching%20vocals%20%20%20lyrics.mp3?dl=1"
+//   src:"./error.mp3",
+//   autoplay: true});
 window.addEventListener("load", function(){
     var delayInMilliseconds = 2000; 
     setTimeout(function() {
@@ -17,10 +17,10 @@ window.addEventListener("load", function(){
     }, delayInMilliseconds);
 });
 
-let loadSound=()=>{
-    console.log(song);
-    song.play();  
-}
+// let loadSound=()=>{
+//     console.log(song);
+//     song.play();  
+// }
 let keyanimations=()=>{
     document.getElementById("esc").classList.add("yellow");
     document.getElementById("one").classList.add("yellow");
@@ -124,8 +124,8 @@ let textchange=()=>{
     document.getElementById("comma").innerHTML="<p>!</p>";
 }
 function load(){
-    document.querySelector("body").click();
-    loadSound();
+    // document.querySelector("body").click();
+    // loadSound();
     card.style.height="0px";
     keyboard.style.backgroundColor="#121212";
     keyboard.style.animation="colorchange 3s alternate-reverse infinite";
