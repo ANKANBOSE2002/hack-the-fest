@@ -6,6 +6,7 @@ var header_right = document.getElementById("header_right");
 var bg = document.getElementById("bg");
 var instruction = document.getElementById("instruction");
 var cardp = document.getElementById("cardp");
+var count = 0;
 window.addEventListener("load", function(){
     var delayInMilliseconds = 2000; 
     setTimeout(function() {
@@ -127,4 +128,10 @@ function load(){
     instruction.style.opacity="1";
     cardp.style.display="none";
     keyanimations();
+}
+function dis(){
+    count++;
+    if(count%2!=0){
+    document.getElementById("submenu").style.display="flex";
+    }
 }
