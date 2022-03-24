@@ -132,6 +132,9 @@ function load(){
 function dis(){
     count++;
     if(count%2!=0){
-    document.getElementById("submenu").style.display="flex";
+        document.getElementById("submenu").style.display="flex";
+    }
+    else{
+        document.getElementById("submenu").style.display="none";
     }
 }
