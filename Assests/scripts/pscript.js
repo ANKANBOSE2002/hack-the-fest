@@ -1,5 +1,3 @@
-let y=window.innerWidth;
-if(y<770){
   document.getElementById("phone").style.display="block";
   var phone_card = document.getElementById("phone-card");
   var phone_keyboard = document.getElementById("phone-keyboard");
@@ -120,4 +118,3 @@ if(y<770){
         x.style.display = "flex";
       }
     }
-}
