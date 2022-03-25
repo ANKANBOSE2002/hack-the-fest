@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Stint+Ultra+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+body main{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.phone-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: 
+linear-gradient(180deg, rgba(248, 184, 139,0) 20%, rgba(248, 184, 139,.1) 20%, rgba(248, 184, 139,.1) 40%, rgba(248, 184, 139,.2) 40%, rgba(248, 184, 139,.2) 60%, rgba(248, 184, 139,.4) 60%, rgba(248, 184, 139,.4) 80%, rgba(248, 184, 139,.5) 80%),
+    linear-gradient(45deg, rgba(250, 248, 132,.3) 20%, rgba(250, 248, 132,.4) 20%, rgba(250, 248, 132,.4) 40%, rgba(250, 248, 132,.5) 40%, rgba(250, 248, 132,.5) 60%, rgba(250, 248, 132,.6) 60%, rgba(250, 248, 132,.6) 80%, rgba(250, 248, 132,.7) 80%),
+    linear-gradient(-45deg, rgba(186, 237, 145,0) 20%, rgba(186, 237, 145,.1) 20%, rgba(186, 237, 145,.1) 40%, rgba(186, 237, 145,.2) 40%, rgba(186, 237, 145,.2) 60%, rgba(186, 237, 145,.4) 60%, rgba(186, 237, 145,.4) 80%, rgba(186, 237, 145,.6) 80%),
+linear-gradient(90deg, rgba(178, 206, 254,0) 20%, rgba(178, 206, 254,.3) 20%, rgba(178, 206, 254,.3) 40%, rgba(178, 206, 254,.5) 40%, rgba(178, 206, 254,.5) 60%, rgba(178, 206, 254,.7) 60%, rgba(178, 206, 254,.7) 80%, rgba(178, 206, 254,.8) 80%),
+    linear-gradient(-90deg, rgba(242, 162, 232,0) 20%, rgba(242, 162, 232,.4) 20%, rgba(242, 162, 232,.4) 40%, rgba(242, 162, 232,.5) 40%, rgba(242, 162, 232,.5) 60%, rgba(242, 162, 232,.6) 60%, rgba(242, 162, 232,.6) 80%, rgba(242, 162, 232,.8) 80%),
+    linear-gradient(180deg, rgba(254, 163, 170,0) 20%, rgba(254, 163, 170,.4) 20%, rgba(254, 163, 170,.4) 40%, rgba(254, 163, 170,.6) 40%, rgba(254, 163, 170,.6) 60%, rgba(254, 163, 170,.8) 60%, rgba(254, 163, 170,.8) 80%, rgba(254, 163, 170,.9) 80%)
+;
+    background-color: rgb(254, 163, 170);
+    background-size: 100% 100%;
+    min-height: 100%;
+    
+}
+.phone-bg2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: #000000;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%23ee0154' fill-opacity='0.31' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.phone-keyboard{
+    height: 200px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    border: 2px solid #464646 ;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(70%);
+    z-index: 10;
+}
+.phone-keyboard .phone-instructions{
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    opacity: 0;
+    color: #b8b8b8;
+    z-index: 10;
+    font-family: 'Roboto', sans-serif;
+}
+.phone-container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2.5px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "q w e r t y u i o p"
+      "a s d f g h j k l and"
+      "up-arrow z x c v b n m clear clear"
+      "num slash space space space space space space dot enter";
+    height: 90%;
+    width: 100%;
+    border: 3px solid #464646;
+    border-radius: 10px;
+    background: #464646;
+    padding-top: 2.5px;
+  }
+.phone-containerrgb{  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2.5px 1px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "q w e r t y u i o p"
+      "a s d f g h j k l and"
+      "up-arrow z x c v b n m clear clear"
+      "num slash space space space space space space dot enter";
+    height: 90%;
+    width: 100%;
+    transition: 75ms;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    background: #000000;    
+    padding: 5px;
+}
+.phone-cardslider{
+    width: 95%;
+    height: 5px;
+    background-color: #4b4b4b;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.phone-card{
+    position: absolute;
+    bottom: 2.5px;
+    left: 0.5%;
+    height: 70px;
+    width: 230px;
+    background-color: #464646;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%23faf884' fill-opacity='0.4' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E");
+    animation: slide 1.5s ease-in-out infinite alternate-reverse both;
+    transition: all 0.5s ease-in-out;
+    display: grid;
+    place-items: center;
+    font-family: 'Stint Ultra Condensed', cursive;
+}
+.phone-card b{
+    text-align: center;
+    color: rgb(187, 187, 187);
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+}
+.phone-card b:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+    color: #fff;
+    animation: loadingtext 2.5s linear infinite;
+}
+@keyframes loadingtext {
+    0% {
+        max-width: 0;
+    }
+}
+@keyframes slide{
+    0%{
+        left: 0.5%;
+    }
+    100%{
+        left: 30%;
+    }
+}
+.phone-q{ 
+    grid-area: q; 
+}  
+.phone-w{ 
+    grid-area: w; 
+}  
+.phone-e{ 
+    grid-area: e; 
+}  
+.phone-r{ 
+    grid-area: r; 
+}  
+.phone-t{ 
+    grid-area: t; 
+}  
+.phone-y{ 
+    grid-area: y; 
+}  
+.phone-u{ 
+    grid-area: u; 
+}  
+.phone-i{ 
+    grid-area: i; 
+}  
+.phone-o{ 
+    grid-area: o; 
+}  
+.phone-p{ 
+    grid-area: p; 
+}  
+.phone-a{ 
+    grid-area: a; 
+}  
+.phone-s{ 
+    grid-area: s; 
+}  
+.phone-d{ 
+    grid-area: d; 
+}  
+.phone-f{ 
+    grid-area: f; 
+}  
+.phone-g{ 
+    grid-area: g; 
+}  
+.phone-h{ 
+    grid-area: h; 
+}  
+.phone-j{ 
+    grid-area: j; 
+}  
+.phone-k{ 
+    grid-area: k; 
+}  
+.phone-l{ 
+    grid-area: l; 
+}  
+.phone-and{ 
+    grid-area: and; 
+}  
+.phone-clear{ 
+    grid-area: clear; 
+}  
+.phone-up-arrow{ 
+    grid-area: up-arrow; 
+}  
+.phone-z{ 
+    grid-area: z; 
+}  
+.phone-x{ 
+    grid-area: x; 
+}  
+.phone-c{ 
+    grid-area: c; 
+}  
+.phone-v{ 
+    grid-area: v; 
+}  
+.phone-b{ 
+    grid-area: b; 
+}  
+.phone-n{ 
+    grid-area: n; 
+}  
+.phone-m{ 
+    grid-area: m; 
+}  
+.phone-enter{ 
+    grid-area: enter; 
+}  
+.phone-enter i{
+    transform: rotate(90deg);
+}
+.phone-dot{ 
+    grid-area: dot; 
+}  
+.phone-num{ 
+    grid-area: num; 
+}  
+.phone-slash{ 
+    grid-area: slash; 
+}  
+.phone-space{ 
+    grid-area: space; 
+}  
+.phone-key{
+    width: 100%;
+    height: 100%;
+    border: 1.5px solid #464646;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+    transition: all 0.4s ease-in-out;
+}
+.phone-key:hover{
+    opacity: 0.9;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+.phone-containerrgb .key p {
+    opacity: 0.4;
+}
+.phone-rr{
+	box-shadow: 0 0 8px rgba(237, 45, 45,1);
+	animation: scale 0.55s ease-in 25ms both, phone-rr 3s linear infinite;
+    background-color: black;
+    color: white;
+    
+}
+.phone-rg{
+	box-shadow: 0 0 8px rgba(43,224,99,1);
+	animation: scale 0.55s ease-in 25ms both, phone-rg 3s linear infinite;
+    background-color: black;
+    color: white;
+    
+}
+.phone-rgh{
+	box-shadow: 0 0 8px rgba(43,82,224,1);
+    background-color: black;
+    color: white;
+    
+}
+.phone-rgb{
+	box-shadow: 0 0 8px rgba(120,200,208,1);
+	animation: scale 0.55s ease-in-out 40ms both, phone-rgb 3s linear infinite;
+    background-color: black;
+    color: white;
+    
+}
+.phone-yellow{
+	box-shadow: 0 0 8px #f1f424;
+	animation: scale 0.55s ease-in-out 40ms both, phone-yellow 3s linear infinite;
+    background-color: black;
+    color: #fff;
+    
+}
+.phone-rg4{
+	box-shadow: 0 0 8px rgb(208,120,151,1);
+    background-color: black;
+    color: white;
+    animation: scale 0.55s ease-in-out 40ms both;
+}
+.phone-rgb4{
+	box-shadow: 0 0 8px rgba(224,43,213,1);
+	animation: scale 0.55s ease-in-out 40ms both, phone-rgb4 3s linear infinite;
+    background-color: black;
+    color: white;
+    
+}
+.phone-rgg{
+	box-shadow: 0 0 8px rgba(224,117,43,1);
+	animation: scale 0.55s ease-in-out 40ms both, phone-rgg 3s linear infinite;
+    background-color: black;
+    color: white;
+    
+}
+.phone-rgf{
+	box-shadow: 0 0 8px rgba(224,43,76,1);
+	animation: scale 0.55s ease-in-out 40ms both, phone-rgf 3s linear infinite;
+    background-color: black;
+    color: white;
+    
+}
+.phone-containerrgb .phone-key p {
+    opacity: 0.4;
+}
+.phone-keyboard .phone-container p, .phone-keyboard .phone-containerrgb p{
+    font-size: 0.9rem;
+}
+.phone-containerrgb .phone-w p, .phone-containerrgb .phone-e p, .phone-containerrgb .phone-r p, .phone-containerrgb .phone-t p, .phone-containerrgb .phone-y p, .phone-containerrgb .phone-u p, .phone-containerrgb .phone-i p, .phone-containerrgb .phone-o p, .phone-containerrgb .phone-f p, .phone-containerrgb .phone-g p, .phone-containerrgb .phone-h p, .phone-containerrgb .phone-j p, .phone-containerrgb .phone-c p, .phone-containerrgb .phone-v p, .phone-containerrgb .phone-b p, .phone-containerrgb .phone-n p{
+    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
+  background-size: 70px 70px;
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent; 
+  animation: heartbeat 1.5s ease-in-out infinite both;
+  font-weight: 700;
+  font-size:1rem;
+  opacity:1;
+}
+.phone-header_right{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+.phone-imgleft{
+    height: 60px;
+    max-width: 200px;
+    /* position: absolute;
+    top: 25px;
+    left: 10px; */
+    z-index: 20;
+    padding-left: 5px;
+}
+.phone-imgleft img{
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+}
+.phone-imgleft-outer{
+    height: 60px;
+    width: 180px;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    z-index: 20;
+}
+.phone-imgleft-outer img{
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+}
+.phone-header_right{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 60px;
+   
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    z-index: 20;
+}
+.phone-tab>.icon{
+    text-decoration: none;
+    margin: 0 15px;
+    border-radius: 10px;
+    background-color: #00000081;
+    /* background: linear-gradient(145deg, #202020, #0c0a0a); */
+    color: #919191;
+    padding:15px 15px;
+    letter-spacing: 2px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;  
+    box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* opacity: 0.8; */
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+    animation: colorchange 3s alternate-reverse infinite;
+    box-shadow: 0 0 16px rgba(237, 45, 45,1);
+    display: flex;
+    flex-direction: column;
+}
+.phone-tab{
+    margin: 1rem;
+    position: relative;
+}
+.phone-tab>a{
+    text-decoration: none;
+}
+.phone-dropMenu{
+    background-color: #000000e5;
+    border-radius: 0 0 7px 7px;
+    padding: 15px 0;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    /* background-color: #0303037c; */
+    height: max-content;
+    width: max-content;
+    padding: 1rem;
+    color: white;
+}
+#phone-events{
+    margin: 0.5em;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.phone-dropMenu div a{
+    text-decoration: none;
+    color: rgb(189, 22, 22);
+    font-family: 'Graduate', cursive;
+    transition: all 0.25s ease-in-out;
+}
+.phone-dropMenu div a:hover{
+    color: rgb(177, 132, 132);
+}
+/* .phone-tab{
+    display: none;
+}
+#myLinks {
+    display: none;
+  }
+
+.phone-header_right .phone-tab{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: -10px;
+    margin-left: 7px;
+    background-color: #f1f424; 
+     width: 100%;
+  }
+ .phone-header_right .phone-tab a{
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 10px;
+    background-color: #000000;
+    background: linear-gradient(145deg, #202020, #0c0a0a);
+    color: #fff;
+    padding:10px 5px;
+    margin-top: 10px;
+    letter-spacing: 0px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;  
+    box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
+    font-weight: 500;
+    animation: colorchange 3s alternate-reverse infinite;
+    box-shadow: 0 0 8px rgba(237, 45, 45,1);
+} 
+.phone-header_right .phone-tab a p{
+    font-size:0.65rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    font-weight: 300;    
+    font-family: 'Graduate', cursive;
+}
+.phone-header_right .phone-tab a:hover p{
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+.phone-header_right .phone-tab a:hover{
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+    animation: colorchange 3s alternate-reverse infinite;
+    color: #fff;
+}  */

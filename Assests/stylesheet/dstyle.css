@@ -70,7 +70,7 @@ main{
     transition: all 0.5s ease-in-out;
     transform: translateY(20%);
     z-index: 10;
-    z-index: 2;
+    z-index: 30;
 }
 .keyboard .instructions{
     position: absolute;
@@ -599,15 +599,13 @@ main{
 } 
 
 .header_right{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: right;
+    width: 90%;
+    display: block;
     opacity: 0;
+    margin-left: 200px;
     position: absolute;
-    top: 35px;
-    left: 0;
+    top: 25px;
+    right: 45px;
     z-index: -1;
     transition: all 0.5s ease-in-out;
 }
@@ -617,7 +615,7 @@ main{
     align-items: center;
     justify-content: right;
 }
-.header_right .tab a.main, .header_right .tab .events{
+.header_right .tab a{
     text-decoration: none;
     margin: 0 15px;
     border-radius: 10px;
@@ -625,6 +623,7 @@ main{
     /* background: linear-gradient(145deg, #202020, #0c0a0a); */
     color: #919191;
     padding:15px 15px;
+    margin-top: 10px;
     letter-spacing: 2px;
     outline: none;
     border:none;
@@ -638,82 +637,35 @@ main{
     animation: colorchange 3s alternate-reverse infinite;
     box-shadow: 0 0 16px rgba(237, 45, 45,1);
 }
-.header_right .tab a.main p, .header_right .tab .events p{
+.header_right .tab a p{
     font-size:0.9rem;
     cursor: pointer;
     position: relative;
     transition: all 0.5s ease-in-out;
-    opacity: 1;
-    font-family: 'Graduate', cursive;
+    opacity: 0.8;
 }
-.header_right .tab a.main:hover p, .header_right .tab .events:hover p{
+.header_right .tab a:hover p{
     font-size: 1rem;
-    opacity: 0.9;
+    opacity: 1;
 }
-.header_right .tab a.main:hover, .header_right .tab .events:hover{
+.header_right .tab a:hover{
     box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
     animation: colorchange 3s alternate-reverse infinite;
     color: #fff;
 }
 
 .imgleft{
-    height: 60px;
-    width: 200px;
+    height: 80px;
+    width: 250px;
     align-self: flex-start;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 7px;
+    left: 0px;
     z-index: 20;
 }
 .imgleft img{
     height: 100%;
     width: 100%;
     z-index: 20;
-}
-.events{
-    position: relative;
-}
-.submenu{
-    position: absolute;
-    top:60px;
-    width: 300px;
-    /* left: 0; */
-    background-color: #000000e5;
-    border-radius: 0 0 7px 7px;
-    display: none;
-    flex-direction: column;
-    z-index: 50;
-    padding: 15px 0;
-}
-.submenu a.sub{
-    text-decoration: none;
-    margin: 0 15px;
-    border-radius: 10px;
-    /* background: linear-gradient(145deg, #202020, #0c0a0a); */
-    color: #919191;
-    padding:5px 5px;
-    letter-spacing: 2px;
-    outline: none;
-    border:none;
-    cursor: pointer;
-    transition: all 0.15s ease-in-out;  
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5rem;
-    /* opacity: 0.8; */
-}
-.submenu a p{
-    font-size:0.9rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
-}
-.submenu a:hover p{
-    font-size: 1rem;
-    opacity: 0.9;
-}
-.submenu a:hover{
-    color: #fff;
 }

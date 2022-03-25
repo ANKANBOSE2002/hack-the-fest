@@ -1,223 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./keyboard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Hack The Fest</title>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.js"></script> -->
+    <link rel="stylesheet" href="./Assests/stylesheet/pstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assests/stylesheet/dstyle.css">
 </head>
-
 <body>
-
-    <main>
+   
+    <div id="desktop" style="display:none">
         <audio id="audio" controls style="display:none">
-            <source src="./key.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-        </audio>
-
+            <source src="./Assests/audio/key.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+          </audio>
         <div class="bg" id="bg"></div>
         <div class="keyboard" id="keyboard">
             <div class="container" id="container">
-                <div class="key esc" id="esc">
-                    <p>esc</p>
-                </div>
-                <div class="key one" id="one">
-                    <p>1</p>
-                </div>
-                <div class="key two" id="two">
-                    <p>2</p>
-                </div>
-                <div class="key three" id="three">
-                    <p>3</p>
-                </div>
-                <div class="key four" id="four">
-                    <p>4</p>
-                </div>
-                <div class="key five" id="five">
-                    <p>5</p>
-                </div>
-                <div class="key six" id="six">
-                    <p>6</p>
-                </div>
-                <div class="key seven" id="seven">
-                    <p>7</p>
-                </div>
-                <div class="key eight" id="eight">
-                    <p>8</p>
-                </div>
-                <div class="key nine" id="nine">
-                    <p>9</p>
-                </div>
-                <div class="key zero" id="zero">
-                    <p>0</p>
-                </div>
-                <div class="key minus" id="minus">
-                    <p>-</p>
-                </div>
-                <div class="key plus" id="plus">
-                    <p>+</p>
-                </div>
-                <div class="key clear" id="clear">
-                    <p><i class="fas fa-backspace"></i></p>
-                </div>
-                <div class="key tab" id="tab">
-                    <p><i class="fas fa-sign-in-alt"></i></p>
-                </div>
-                <div class="key ghost" id="ghost">
-                    <p><i class="fas fa-sign-in-alt"></i></p>
-                </div>
-                <div class="key q" onclick="sound()" id="q">
-                    <p>Q</p>
-                </div>
-                <div class="key w" onclick="sound()" id="w">
-                    <p>W</p>
-                </div>
-                <div class="key e" onclick="sound()" id="e">
-                    <p>E</p>
-                </div>
-                <div class="key r" onclick="sound()" id="r">
-                    <p>R</p>
-                </div>
-                <div class="key t" onclick="sound()" id="t">
-                    <p>T</p>
-                </div>
-                <div class="key y" onclick="sound()" id="y">
-                    <p>Y</p>
-                </div>
-                <div class="key u" onclick="sound()" id="u">
-                    <p>U</p>
-                </div>
-                <div class="key i" onclick="sound()" id="i">
-                    <p>I</p>
-                </div>
-                <div class="key o" onclick="sound()" id="o">
-                    <p>O</p>
-                </div>
-                <div class="key p" onclick="sound()" id="p">
-                    <p>P</p>
-                </div>
-                <div class="key sq-brckt-l" onclick="sound()" id="sq-brckt-l">
-                    <p>[</p>
-                </div>
-                <div class="key sq-brckt-r" onclick="sound()" id="sq-brckt-r">
-                    <p>]</p>
-                </div>
-                <div class="key slash-l" onclick="sound()" id="slash-l">
-                    <p>\</p>
-                </div>
-                <div class="key capslock" id="capslock">
-                    <p>caps lock</p>
-                </div>
-                <div class="key a" id="a">
-                    <p>A</p>
-                </div>
-                <div class="key s" id="s">
-                    <p>S</p>
-                </div>
-                <div class="key d" id="d">
-                    <p>D</p>
-                </div>
-                <div class="key f" id="f">
-                    <p>F</p>
-                </div>
-                <div class="key g" id="g">
-                    <p>G</p>
-                </div>
-                <div class="key h" id="h">
-                    <p>H</p>
-                </div>
-                <div class="key j" id="j">
-                    <p>J</p>
-                </div>
-                <div class="key k" id="k">
-                    <p>K</p>
-                </div>
-                <div class="key l" id="l">
-                    <p>L</p>
-                </div>
-                <div class="key semicolon" id="semicolon">
-                    <p>;</p>
-                </div>
-                <div class="key quote" id="quote">
-                    <p>'</p>
-                </div>
-                <div class="key enter" id="enter">
-                    <p><i class="fas fa-level-down-alt"></i></p>
-                </div>
-                <div class="key shift" id="shift">
-                    <p>shift &nbsp; <i class="fas fa-long-arrow-alt-up"></i></p>
-                </div>
-                <div class="key z" id="z">
-                    <p>Z</p>
-                </div>
-                <div class="key x" id="x">
-                    <p>X</p>
-                </div>
-                <div class="key c" id="c">
-                    <p>C</p>
-                </div>
-                <div class="key v" id="v">
-                    <p>V</p>
-                </div>
-                <div class="key b" onclick="sound()" id="b">
-                    <p>B</p>
-                </div>
-                <div class="key n" onclick="sound()" id="n">
-                    <p>N</p>
-                </div>
-                <div class="key m" onclick="sound()" id="m">
-                    <p>M</p>
-                </div>
-                <div class="key comma" onclick="sound()" id="comma">
-                    <p>,</p>
-                </div>
-                <div class="key fullstop" id="fullstop">
-                    <p>.</p>
-                </div>
-                <div class="key slash-r" id="slash-r">
-                    <p>/</p>
-                </div>
-                <div class="key shift2" id="shift2">
-                    <p>shift &nbsp;</p>
-                </div>
-                <div class="key arrow-up" id="arrow-up">
-                    <p><i class="fas fa-arrow-up"></i></p>
-                </div>
-                <div class="key delete" id="delete">
-                    <p><i class="fas fa-trash-alt"></i></p>
-                </div>
-                <div class="key ctrl" id="ctrl">
-                    <p>ctrl</p>
-                </div>
-                <div class="key fn" id="fn">
-                    <p>fn</p>
-                </div>
-                <div class="key win" id="win">
-                    <p><i class="fab fa-windows"></i></p>
-                </div>
-                <div class="key alt" id="alt">
-                    <p>alt</p>
-                </div>
-                <div class="key arrow-right" id="arrow-right">
-                    <p><i class="fas fa-arrow-right"></i></p>
-                </div>
-                <div class="key arrow-dwn" id="arrow-dwn">
-                    <p><i class="fas fa-arrow-down"></i></p>
-                </div>
-                <div class="key arrow-left" id="arrow-left">
-                    <p><i class="fas fa-arrow-left"></i></p>
-                </div>
-                <div class="key win2" id="win2">
-                    <p><i class="fab fa-windows"></i></p>
-                </div>
-                <div class="key alt2" id="alt2">
-                    <p>alt</p>
-                </div>
+                <div class="key esc" id="esc"><p>esc</p></div>
+                <div class="key one" id="one"><p>1</p></div>
+                <div class="key two" id="two"><p>2</p></div>
+                <div class="key three" id="three"><p>3</p></div>
+                <div class="key four" id="four"><p>4</p></div>
+                <div class="key five" id="five"><p>5</p></div>
+                <div class="key six" id="six"><p>6</p></div>
+                <div class="key seven" id="seven"><p>7</p></div>
+                <div class="key eight" id="eight"><p>8</p></div>
+                <div class="key nine" id="nine"><p>9</p></div>
+                <div class="key zero" id="zero"><p>0</p></div>
+                <div class="key minus" id="minus"><p>-</p></div>
+                <div class="key plus" id="plus"><p>+</p></div>
+                <div class="key clear" id="clear"><p><i class="fas fa-backspace"></i></p></div>
+                <div class="key tab" id="tab"><p><i class="fas fa-sign-in-alt"></i></p></div>
+                <div class="key ghost" id="ghost"><p><i class="fas fa-sign-in-alt"></i></p></div>
+                <div class="key q" onclick="sound()" id="q"><p>Q</p></div>
+                <div class="key w" onclick="sound()" id="w"><p>W</p></div>
+                <div class="key e" onclick="sound()" id="e"><p>E</p></div>
+                <div class="key r" onclick="sound()" id="r"><p>R</p></div>
+                <div class="key t" onclick="sound()" id="t"><p>T</p></div>
+                <div class="key y" onclick="sound()" id="y"><p>Y</p></div>
+                <div class="key u" onclick="sound()" id="u"><p>U</p></div>
+                <div class="key i" onclick="sound()" id="i"><p>I</p></div>
+                <div class="key o" onclick="sound()" id="o"><p>O</p></div>
+                <div class="key p" onclick="sound()" id="p"><p>P</p></div>
+                <div class="key sq-brckt-l" onclick="sound()" id="sq-brckt-l"><p>[</p></div>
+                <div class="key sq-brckt-r" onclick="sound()" id="sq-brckt-r"><p>]</p></div>
+                <div class="key slash-l" onclick="sound()" id="slash-l"><p>\</p></div>
+                <div class="key capslock" id="capslock"><p>caps lock</p></div>
+                <div class="key a" id="a"><p>A</p></div>
+                <div class="key s" id="s"><p>S</p></div>
+                <div class="key d" id="d"><p>D</p></div>
+                <div class="key f" id="f"><p>F</p></div>
+                <div class="key g" id="g"><p>G</p></div>
+                <div class="key h" id="h"><p>H</p></div>
+                <div class="key j" id="j"><p>J</p></div>
+                <div class="key k" id="k"><p>K</p></div>
+                <div class="key l" id="l"><p>L</p></div>
+                <div class="key semicolon" id="semicolon"><p>;</p></div>
+                <div class="key quote" id="quote"><p>'</p></div>
+                <div class="key enter" id="enter"><p><i class="fas fa-level-down-alt"></i></p></div>
+                <div class="key shift" id="shift"><p>shift &nbsp; <i class="fas fa-long-arrow-alt-up"></i></p></div>
+                <div class="key z" id="z"><p>Z</p></div>
+                <div class="key x" id="x"><p>X</p></div>
+                <div class="key c" id="c"><p>C</p></div>
+                <div class="key v" id="v"><p>V</p></div>
+                <div class="key b" onclick="sound()" id="b"><p>B</p></div>
+                <div class="key n" onclick="sound()" id="n"><p>N</p></div>
+                <div class="key m" onclick="sound()" id="m"><p>M</p></div>
+                <div class="key comma" onclick="sound()" id="comma"><p>,</p></div>
+                <div class="key fullstop" id="fullstop"><p>.</p></div>
+                <div class="key slash-r" id="slash-r"><p>/</p></div>
+                <div class="key shift2" id="shift2"><p>shift &nbsp;</p></div>
+                <div class="key arrow-up" id="arrow-up"><p><i class="fas fa-arrow-up"></i></p></div>
+                <div class="key delete" id="delete"><p><i class="fas fa-trash-alt"></i></p></div>
+                <div class="key ctrl" id="ctrl"><p>ctrl</p></div>
+                <div class="key fn" id="fn"><p>fn</p></div>
+                <div class="key win" id="win"><p><i class="fab fa-windows"></i></p></div>
+                <div class="key alt" id="alt"><p>alt</p></div>
+                <div class="key arrow-right" id="arrow-right"><p><i class="fas fa-arrow-right"></i></p></div>
+                <div class="key arrow-dwn" id="arrow-dwn"><p><i class="fas fa-arrow-down"></i></p></div>
+                <div class="key arrow-left" id="arrow-left"><p><i class="fas fa-arrow-left"></i></p></div>
+                <div class="key win2" id="win2"><p><i class="fab fa-windows"></i></p></div>
+                <div class="key alt2" id="alt2"><p>alt</p></div>
                 <div class="key spacebar" id="spacebar"></div>
             </div>
             <div class="cardslider">
@@ -226,40 +91,111 @@
                 </div>
             </div>
             <div class="instructions" id="instruction">
-                <marquee behavior="scroll" direction="left" scrollamount="12" scrolldelay="0">Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit. Nullam sed posuere elit. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Nullam sed posuere elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam sed posuere elit.</marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="12" scrolldelay="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed posuere elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed posuere elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed posuere elit.</marquee>
             </div>
         </div>
+
+
         <div class="header_right" id="header_right">
             <div class="imgleft">
-                <img src="Asset-265.png" alt="">
+                <img src="Assests/img/logo.png" alt="">
             </div>
             <div class="tab">
-                <div class="events" id="events" onclick="dis()"><p>Events</p>
-                    <div class="submenu" id="submenu">
-                        <a href="" class="sub">Hackoverflow 4.0</a>
-                        <a href="" class="sub">E-summit</a>
-                        <a href="" class="sub">Internship Fair and Startup Expo</a>
-                        <a href="" class="sub">K-12 Championship</a>
-                        <a href="" class="sub">Zonal Level Coding Competition</a>
-                    </div>
-                </div>
-                <a href="" class="main">
-                    <p>Contact Us</p>
-                </a>
-                <a href="" class="main">
-                    <p>Sponsors</p>
-                </a>
-
+                <a href=""><p>Home</p></a>
+                <a href=""><p>Event</p></a>
+                <a href=""><p>Contact Us</p></a>
+                <a href=""><p>Sponsors</p></a> 
+                
             </div>
-
+            
         </div>
 
 
-    </main>
-    <script src="./script.js"></script>
-</body>
+    </div>
 
+    <div id="phone" style="display:none">
+        <div class="phone-bg" id="phone-bg"></div>
+        <div class="phone-keyboard" id="phone-keyboard">
+            <div class="phone-container" id="phone-container">
+                <div class="phone-key phone-q" id="phone-q"><p>q</p></div>
+                <div class="phone-key phone-w" id="phone-w"><p>w</p></div>
+                <div class="phone-key phone-e" id="phone-e"><p>e</p></div>
+                <div class="phone-key phone-r" id="phone-r"><p>r</p></div>
+                <div class="phone-key phone-t" id="phone-t"><p>t</p></div>
+                <div class="phone-key phone-y" id="phone-y"><p>y</p></div>
+                <div class="phone-key phone-u" id="phone-u"><p>u</p></div>
+                <div class="phone-key phone-i" id="phone-i"><p>i</p></div>
+                <div class="phone-key phone-o" id="phone-o"><p>o</p></div>
+                <div class="phone-key phone-p" id="phone-p"><p>p</p></div>
+                <div class="phone-key phone-a" id="phone-a"><p>a</p></div>
+                <div class="phone-key phone-s" id="phone-s"><p>s</p></div>
+                <div class="phone-key phone-d" id="phone-d"><p>d</p></div>
+                <div class="phone-key phone-f" id="phone-f"><p>f</p></div>
+                <div class="phone-key phone-g" id="phone-g"><p>g</p></div>
+                <div class="phone-key phone-h" id="phone-h"><p>h</p></div>
+                <div class="phone-key phone-j" id="phone-j"><p>j</p></div>
+                <div class="phone-key phone-k" id="phone-k"><p>k</p></div>
+                <div class="phone-key phone-l" id="phone-l"><p>l</p></div>
+                <div class="phone-key phone-and" id="phone-and"><p>&</p></div>
+                <div class="phone-key phone-clear" id="phone-clear"><p><i class="fas fa-backspace"></i></p></div>
+                <div class="phone-key phone-up-arrow" id="phone-up-arrow"><p><i class="fas fa-arrow-up"></i></p></div>
+                <div class="phone-key phone-z" id="phone-z"><p>z</p></div>
+                <div class="phone-key phone-x" id="phone-x"><p>x</p></div>
+                <div class="phone-key phone-c" id="phone-c"><p>c</p></div>
+                <div class="phone-key phone-v" id="phone-v"><p>v</p></div>
+                <div class="phone-key phone-b" id="phone-b"><p>b</p></div>
+                <div class="phone-key phone-n" id="phone-n"><p>n</p></div>
+                <div class="phone-key phone-m" id="phone-m"><p>m</p></div>
+                <div class="phone-key phone-enter" id="phone-enter"><p><i class="fas fa-level-down-alt"></i></p></div>
+                <div class="phone-key phone-dot" id="phone-dot"><p>.</p></div>
+                <div class="phone-key phone-num" id="phone-num"><p><i class="far fa-smile"></i></p></div>
+                <div class="phone-key phone-slash" id="phone-slash"><p>/</p></div>
+                <div class="phone-key phone-space" id="phone-space"><p></p></div>
+            </div>
+            <div class="phone-cardslider">
+                <div class="phone-card" id="phone-card">
+                    <b id="phone-cardp" data-text="HackOverflow Society Presents">HackOverflow Society Presents</b>
+                </div>
+            </div>
+            <div class="phone-instructions" id="phone-instructions">
+                <marquee behavior="scroll" direction="left" scrollamount="12" scrolldelay="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed posuere elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed posuere elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed posuere elit.</marquee>
+            </div> 
+        </div>  
+        
+        
+        <div class="phone-header_right" id="phone-header_right">
+            <div class="phone-imgleft">
+                <img src="./Assests/img/logo.png">
+            </div>
+            <div class="phone-tab">
+                  <a href="javascript:void(0);" class="icon"  style="margin: 0.5rem;" onclick="showMenu()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                  <div class="phone-dropMenu" id="phone-menu">
+                    <div><a href="#">Home</a></div>
+                    <div>
+                        <a href="#" onclick="showEvents()">Events</a>
+                        <div id="phone-events">
+                            <a href="#">K-12</a>
+                            <a href="#">Internship Fair</a>
+                            <a href="#">BGC</a>
+                        </div>
+                    </div>
+                    <div><a href="#">Sponsors</a></div>
+                </div>
+            </div>
+          </div>
+
+          
+        
+        <div class="phone-imgleft-outer" id="phone-image-outer">
+            <img src="./Assests/img/logo.png" alt="">
+        </div>
+    </div>
+
+
+
+    <script src="./Assests/scripts/dscript.js"></script>
+    <script src="./Assests/scripts/pscript.js"></script>
+</body>
 </html>
