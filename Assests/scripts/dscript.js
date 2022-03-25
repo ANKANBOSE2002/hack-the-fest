@@ -1,6 +1,3 @@
-x=window.innerWidth;
-if(x>=770){
-    document.getElementById("desktop").style.display="block";
     var btn = document.getElementById("dropbtn");
     var card = document.getElementById("card");
     var keyboard = document.getElementById("keyboard");
@@ -131,5 +128,4 @@ if(x>=770){
         cardp.style.display="none";
         keyanimations();
     }
-    
-}
+
