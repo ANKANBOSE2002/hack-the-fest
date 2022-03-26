@@ -1,5 +1,3 @@
- pq=document.getElementById("phone");
- console.log(pq);
  var phone_card = document.getElementById("phone-card");
   var phone_keyboard = document.getElementById("phone-keyboard");
   var phone_container = document.getElementById("phone-container");
