@@ -1,5 +1,6 @@
-  document.getElementById("phone").style.display="block";
-  var phone_card = document.getElementById("phone-card");
+ pq=document.getElementById("phone");
+ console.log(pq);
+ var phone_card = document.getElementById("phone-card");
   var phone_keyboard = document.getElementById("phone-keyboard");
   var phone_container = document.getElementById("phone-container");
   var phone_header_right = document.getElementById("phone-header_right");
@@ -10,21 +11,12 @@
   window.addEventListener("load", function(){
       var delayInMilliseconds = 2000; 
       setTimeout(function() {
-        load();
+        pload();
       }, delayInMilliseconds);
   });
   
-  let triggerSound=()=>{
-      
-      document.querySelector("body").addEventListener('keydown', (e) => {
-            if(e.key=="h"||e.key=="a"||e.key=="c"||e.key=="k"||e.key=="t"||e.key=="e"||e.key=="f"||e.key=="s"||e.key=="t")sound();
-        });
-  }
-  let sound=()=>{
-      document.getElementById('audio').play();
-  }
-  
-  let textchange=()=>{
+   
+  let ptextchange=()=>{
       document.getElementById("phone-w").innerHTML="<p>H</p>";
       document.getElementById("phone-e").innerHTML="<p>A</p>";
       document.getElementById("phone-r").innerHTML="<p>C</p>";
@@ -33,7 +25,6 @@
       document.getElementById("phone-u").innerHTML="<p>T</p>";
       document.getElementById("phone-i").innerHTML="<p>H</p>";
       document.getElementById("phone-o").innerHTML="<p>E</p>";
-      // document.getElementById("i").innerHTML="<p>-</p>";
       document.getElementById("phone-f").innerHTML="<p>F</p>";
       document.getElementById("phone-g").innerHTML="<p>E</p>";
       document.getElementById("phone-h").innerHTML="<p>S</p>";
@@ -44,7 +35,7 @@
       document.getElementById("phone-n").innerHTML="<p>2</p>";
   }
   
-  let keyanimations=()=>{
+  let pkeyanimations=()=>{
       document.getElementById("phone-q").classList.add("phone-yellow");
       document.getElementById("phone-w").classList.add("phone-yellow");
       document.getElementById("phone-e").classList.add("phone-rr");
@@ -56,7 +47,6 @@
       document.getElementById("phone-o").classList.add("phone-rgb");
       document.getElementById("phone-p").classList.add("phone-rgb");
       document.getElementById("phone-a").classList.add("phone-yellow");
-      // document.getElementById("phone-ghost").classList.add("phone-yellow");
       document.getElementById("phone-s").classList.add("phone-rr");
       document.getElementById("phone-d").classList.add("phone-rr");
       document.getElementById("phone-f").classList.add("phone-rr");
@@ -81,10 +71,9 @@
       document.getElementById("phone-space").classList.add("phone-rg");
       document.getElementById("phone-dot").classList.add("phone-rg");
       document.getElementById("phone-clear").classList.add("phone-rg");
-      textchange();
-      triggerSound();
+      ptextchange();
   }
-  function load(){
+  function pload(){
       phone_card.style.height="0px";
       phone_keyboard.style.backgroundColor="#121212";
       phone_keyboard.style.animation="colorchange 3s alternate-reverse infinite";
@@ -96,8 +85,7 @@
       phone_instructions.style.opacity="1";
       phone_cardp.style.display="none";
       phone_image_outer.style.display="none";
-      // phone_btn.style.display="none";
-      keyanimations();
+      pkeyanimations();
   }
   
   function showMenu() {

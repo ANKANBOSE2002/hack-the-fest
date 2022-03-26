@@ -584,10 +584,7 @@ main{
     linear-gradient(45deg, rgba(237, 45, 45,1),rgba(224,43,76,1),#f1f424,rgba(43,224,99,1),#4ff,rgba(43,82,224,1),rgba(224,43,213,1)); 
      */
     
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
-    /* background-image: url("https://cutewallpaper.org/25/animated-wallpaper-gif-chage-color/best-yellow-background-gifs-gfycat.gif"); */
-    /* background-image: url("https://thumbs.gfycat.com/DecimalPositiveCygnet-size_restricted.gif"); */
-    /* background-image: url("https://i.pinimg.com/originals/74/7a/40/747a401c0daac6b580fd1ffc4e5c3039.gif"); */
+    background-image: url("../img/giphy.webp");
     background-size: 70px 70px;
     -webkit-background-clip: text;
     background-clip:text;
@@ -1023,7 +1020,7 @@ main{
     font-size: 0.9rem;
 }
 .phone-containerrgb .phone-w p, .phone-containerrgb .phone-e p, .phone-containerrgb .phone-r p, .phone-containerrgb .phone-t p, .phone-containerrgb .phone-y p, .phone-containerrgb .phone-u p, .phone-containerrgb .phone-i p, .phone-containerrgb .phone-o p, .phone-containerrgb .phone-f p, .phone-containerrgb .phone-g p, .phone-containerrgb .phone-h p, .phone-containerrgb .phone-j p, .phone-containerrgb .phone-c p, .phone-containerrgb .phone-v p, .phone-containerrgb .phone-b p, .phone-containerrgb .phone-n p{
-    background-image: url("https://media3.giphy.com/media/RsWTBRWrA071LXNMXM/giphy.gif?cid=790b7611a8923285796dfc188617fc152517c6e753e8a43e&rid=giphy.gif&ct=g");
+    background-image: url("../img/giphy.webp");
   background-size: 70px 70px;
   -webkit-background-clip: text;
   background-clip:text;
@@ -1086,7 +1083,6 @@ main{
     margin: 0 15px;
     border-radius: 10px;
     background-color: #00000081;
-    /* background: linear-gradient(145deg, #202020, #0c0a0a); */
     color: #919191;
     padding:15px 15px;
     letter-spacing: 2px;
@@ -1097,7 +1093,6 @@ main{
     box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
     font-size: 1.2rem;
     font-weight: 500;
-    /* opacity: 0.8; */
     box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
     animation: colorchange 3s alternate-reverse infinite;
     box-shadow: 0 0 16px rgba(237, 45, 45,1);
@@ -1150,7 +1145,7 @@ main{
 .phone{
     display: grid;
 }
-@media (min-width:1200px){
+@media (min-width:880px){
     .laptop{
         display: grid;
     }
