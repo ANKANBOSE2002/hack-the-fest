@@ -137,5 +137,7 @@
         instruction.style.opacity="1";
         cardp.style.display="none";
         keyanimations();
+        document.querySelector("section.events").style.display="block";
+
     }
 

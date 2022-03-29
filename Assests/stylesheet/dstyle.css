@@ -1205,7 +1205,7 @@ section{
     min-height: 100vh;
     min-width: 100%;
     background: #f1f424;
-    display: grid;
+    display: none;
     place-items: center;
 }
 section.events .row{
