@@ -1253,4 +1253,7 @@ section.events .row .box a img{
         height: 250px;
         width: 450px;
     }
+    section.events{
+        padding-top: 150px;
+    }
 }
