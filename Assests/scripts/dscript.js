@@ -6,6 +6,7 @@
     var bg = document.getElementById("bg");
     var instruction = document.getElementById("instruction");
     var cardp = document.getElementById("cardp");
+    var count = 0;
     window.addEventListener("load", function(){
         var delayInMilliseconds = 2000; 
         setTimeout(function() {
@@ -13,6 +14,15 @@
         }, delayInMilliseconds);
     });
     
+    function dis(){
+        count++;
+        if(count%2!=0){
+        document.getElementById("submenu").style.display="flex";
+        }
+        else{
+            document.getElementById("submenu").style.display="none";  
+        }
+    }    
     let keyanimations=()=>{
         document.getElementById("esc").classList.add("yellow");
         document.getElementById("one").classList.add("yellow");

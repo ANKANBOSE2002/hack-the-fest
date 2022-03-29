@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>HACK-THE-FEST</title>
+    <title>Hack-The-Fest</title>
+    <link rel="icon" type="image/x-icon " href="./Assests/img/FIcon.png">
     <link rel="stylesheet" href="./Assests/stylesheet/dstyle.css">
 </head>
 <body>
@@ -63,7 +64,7 @@
                 <div class="key z" id="z"><p>Z</p></div>
                 <div class="key x" id="x"><p>X</p></div>
                 <div class="key c" id="c"><p>C</p></div>
-                <div class="key v" id="v"><p>V</p></div>
+                <div class="key v" onclick="sound()" id="v"><p>V</p></div>
                 <div class="key b" onclick="sound()" id="b"><p>B</p></div>
                 <div class="key n" onclick="sound()" id="n"><p>N</p></div>
                 <div class="key m" onclick="sound()" id="m"><p>M</p></div>
@@ -90,7 +91,8 @@
                 </div>
             </div>
             <div class="instructions" id="instruction">
-                <marquee behavior="scroll" direction="left" scrollamount="12" scrolldelay="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed posuere elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed posuere elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed posuere elit.</marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="12" scrolldelay="0">The vision is to promote entrepreneurship and technology on a large scale, as well as provide a platform for students from all fields and interests.
+                </marquee>
             </div>
         </div>
 
@@ -100,12 +102,29 @@
                 <img src="Assests/img/logo.png" alt="">
             </div>
             <div class="tab">
-                <a href=""><p>Home</p></a>
-                <a href=""><p>Event</p></a>
-                <a href=""><p>Contact Us</p></a>
-                <a href=""><p>Sponsors</p></a> 
+                 
                 
+                <div class="events" id="events" onclick="dis()"><p>Events</p>
+                    <div class="submenu" id="submenu">
+                        <a href="" class="sub">Hackoverflow 4.0</a>
+                        <a href="" class="sub">E-summit</a>
+                        <a href="" class="sub">Internship Fair and Startup Expo</a>
+                        <a href="" class="sub">K-12 Championship</a>
+                        <a href="" class="sub">Zonal Level Coding Competition</a>
+                    </div>
+                </div>
+                <a href="" class="main">
+                    <p>Contact Us</p>
+                </a>
+                <a href="" class="main">
+                    <p>Sponsors</p>
+                </a>
+
             </div>
+            
+
+        </div>
+
             
         </div>
 
@@ -170,16 +189,18 @@
                     <i class="fa fa-bars"></i>
                   </a>
                   <div class="phone-dropMenu" id="phone-menu">
-                    <div><a href="#">Home</a></div>
-                    <div>
-                        <a href="#" onclick="showEvents()">Events</a>
-                        <div id="phone-events">
-                            <a href="#">K-12</a>
-                            <a href="#">Internship Fair</a>
-                            <a href="#">BGC</a>
+                      <div>
+                          <a href="#" onclick="showEvents()">Events</a>
+                          <div id="phone-events">
+                              <a href="#">Hackoverflow 4.0</a>
+                              <a href="#">E-summit</a>
+                              <a href="#">Internship Fair and Startup Expo</a>
+                              <a href="#">K-12 Championship</a>
+                              <a href="#">Zonal Level Coding Competition</a>
+                            </div>
                         </div>
-                    </div>
-                    <div><a href="#">Sponsors</a></div>
+                        <div><a href="#">Sponsors</a></div>
+                        <div><a href="#">Contact Us</a></div>
                 </div>
             </div>
           </div>
