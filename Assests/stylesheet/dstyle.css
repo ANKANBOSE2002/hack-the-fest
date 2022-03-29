@@ -1202,11 +1202,16 @@ main{
     display: grid;
 }
 section{
-    min-height: 100vh;
-    min-width: 100%;
-    background: #f1f424;
-    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
     place-items: center;
+    position: relative;
+    z-index: 2;
+}
+section.events{
+    min-height: 100vh;
+    background-color: #000000;
 }
 section.events .row{
     display: flex;
@@ -1214,11 +1219,11 @@ section.events .row{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    z-index: 20;
 }
 section.events .row .box{
     width: 300px;
     height: 200px;
-    background-color: blueviolet;
     margin: 30px 0;
 }
 section.events .row .box a{
