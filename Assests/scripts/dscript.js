@@ -138,6 +138,6 @@
         cardp.style.display="none";
         keyanimations();
         document.querySelector("section.events").style.display="block";
-
+        AOS.init();
     }
 
