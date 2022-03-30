@@ -1234,6 +1234,19 @@ section.events p{
     letter-spacing: 3px;
     font-family: Arial;
 }
+
+.video-container{ 
+   display: block;
+   margin: auto;
+   width: 100%;
+   height: 100vh;
+}
+.video-container>iframe{
+    display: block;
+    margin-inline: auto;
+    width: 100%;
+    height: 100%;
+}
 section.events .row{
     display: flex;
     flex-direction: row;
