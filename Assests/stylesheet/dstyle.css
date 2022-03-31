@@ -1103,9 +1103,6 @@ main{
 .phone-imgleft{
     height: 60px;
     max-width: 200px;
-    /* position: absolute;
-    top: 25px;
-    left: 10px; */
     z-index: 20;
     padding-left: 5px;
 }
@@ -1216,10 +1213,8 @@ section{
 section.events{
     min-height: 100vh;
     display: none;
-    background-image: url("https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?size=626&ext=jpg&ga=GA1.1.1593724726.1643587200");
-    background-image: url("https://backgroundabstract.com/wp-content/uploads/edd/2021/09/gradient-blue-pink-abstract-art-wallpaper-preview.jpg"), linear-gradient(#eb01a5, #d13531);
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%), url("https://backgroundabstract.com/wp-content/uploads/edd/2021/09/gradient-blue-pink-abstract-art-wallpaper-preview.jpg") no-repeat center center scroll;
-
+    /* background-image: url("../img/gradient-blue-pink-abstract-art-wallpaper-preview.jpg"), linear-gradient(#eb01a5, #d13531); */
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%), url("../img/gradient-blue-pink-abstract-art-wallpaper-preview.jpg") no-repeat center center scroll;
     background-size: 100% 100%;
 }
 section.events p{
@@ -1243,16 +1238,18 @@ section.events p{
    place-items: center;
    width: 100%;
    height: 100vh;
-   background-color: #c73e1d;
-background-image: linear-gradient(315deg, #c73e1d 0%, #a23b72 37%, #2e86ab 100%);
-background: #780206;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+   background: #ff0084;  /* fallback for old browsers */
+   /* background: -webkit-linear-gradient(90deg,  #020251,#340166,#F0007B);  Chrome 10-25, Safari 5.1-6 */
+   /* background: linear-gradient(90deg, #020251,#340166,#F0007B); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: -webkit-linear-gradient(145deg, #020540,#030759,#010326,#BF046B);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(145deg,#020540,#030759,#010326,#4C0144,#79004D);
+   /* background-filter: blur(15px); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   /* background-size: 200%; */
 
 
 }
 .video-container>iframe{
+    z-index: 20;
     display: block;
     width: 90%;
     height: 90%;
