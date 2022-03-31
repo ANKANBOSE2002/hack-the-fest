@@ -138,7 +138,7 @@
         cardp.style.display="none";
         keyanimations();
         document.querySelector("section.events").style.display="block";
-        document.querySelector("section.video-container").style.display="block";
+        document.querySelector("section.video-container").style.display="grid";
         AOS.init();
     }
 

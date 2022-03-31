@@ -32,7 +32,7 @@
       document.getElementById("phone-b").innerHTML="<p>2</p>";
       document.getElementById("phone-n").innerHTML="<p>2</p>";
   }
-  
+
   let pkeyanimations=()=>{
       document.getElementById("phone-q").classList.add("phone-yellow");
       document.getElementById("phone-w").classList.add("phone-yellow");

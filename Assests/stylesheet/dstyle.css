@@ -1240,13 +1240,22 @@ section.events p{
 
 .video-container{ 
    display: none;
+   place-items: center;
    width: 100%;
    height: 100vh;
+   background-color: #c73e1d;
+background-image: linear-gradient(315deg, #c73e1d 0%, #a23b72 37%, #2e86ab 100%);
+background: #780206;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
 }
 .video-container>iframe{
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 section.events .row{
     display: flex;
