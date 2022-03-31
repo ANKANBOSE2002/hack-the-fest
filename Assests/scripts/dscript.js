@@ -113,7 +113,7 @@
         document.getElementById("r").innerHTML="<p>-</p>";
         document.getElementById("t").innerHTML="<p>T</p>";
         document.getElementById("y").innerHTML="<p>H</p>";
-        document.getElementById("u").innerHTML="<p>E</p>";
+        document.getElementById("u").innerHTML=`<p><a href="#event-section" >E</a></p>`;
         document.getElementById("i").innerHTML="<p>-</p>";
         document.getElementById("o").innerHTML="<p>F</p>";
         document.getElementById("p").innerHTML="<p>E</p>";
@@ -138,6 +138,7 @@
         cardp.style.display="none";
         keyanimations();
         document.querySelector("section.events").style.display="block";
+        document.querySelector("section.video-container").style.display="block";
         AOS.init();
     }
 
