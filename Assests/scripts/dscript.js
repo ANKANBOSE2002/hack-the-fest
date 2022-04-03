@@ -137,7 +137,8 @@
         instruction.style.opacity="1";
         cardp.style.display="none";
         keyanimations();
-        document.querySelector(".Rsection").style.display="block";
+        document.getElementById("videosec").style.display="grid";
+        document.getElementById("event-section").style.display="flex";
         AOS.init();
     }
 

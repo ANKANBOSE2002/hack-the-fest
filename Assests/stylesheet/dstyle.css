@@ -1214,6 +1214,7 @@ section{
 section.events{
     min-height: 100vh;
     display: none;
+    flex-direction: column;
     /* background-image: url("../img/gradient-blue-pink-abstract-art-wallpaper-preview.jpg"), linear-gradient(#eb01a5, #d13531); */
     background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%), url("../img/gradient-blue-pink-abstract-art-wallpaper-preview.jpg") no-repeat center center scroll;
     background-size: 100% 100%;
@@ -1283,16 +1284,15 @@ section.events .row .box a img{
     height: 100%;
     width: 100%;
 }
-section.timeline{
+div.timeline{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* background-image: url("../img/gradient-blue-pink-abstract-art-wallpaper-preview.jpg"), linear-gradient(#eb01a5, #d13531); */
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%), url("../img/gradient-blue-pink-abstract-art-wallpaper-preview.jpg") no-repeat center center scroll;
-    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
     padding: 45px 0;
 }
-section.timeline p{
+div.timeline p{
     font-size: 3.5rem;
     color: white;
     text-align: center;
@@ -1308,7 +1308,7 @@ section.timeline p{
     text-transform: uppercase;
     font-family: Arial;
 }
-section.timeline .l-box, section.timeline .p-box{
+div.timeline .l-box{
     margin: 30px 0;
     border-radius: 12px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
@@ -1317,18 +1317,21 @@ section.timeline .l-box, section.timeline .p-box{
     animation: colorchange 3s alternate-reverse infinite;
     box-shadow: 0 0 16px rgba(237, 45, 45,1);
 }
-section.timeline .p-box{
-    /* width: 300px;
-    height: 500px; */
+div.timeline .p-box{
+    margin-top: -120px;
 }
-section.timeline .l-box{
-    width: 1000px;
-    height: 500px;
+div.timeline .l-box{
+    width:1000px;
+    height: 400px;
 }
-section.timeline .l-box{
+div.timeline .l-box{
     display: none;
 }
-section.timeline .l-box img, section.timeline .p-box img{
+div.timeline .l-box img{
+    height: 100%;
+    width: 100%;
+}
+div.timeline .p-box img{
     height: 100%;
     width: 100%;
 }
@@ -1350,17 +1353,17 @@ section.timeline .l-box img, section.timeline .p-box img{
         font-size: 4.5rem;
         margin-bottom: 100px;
     }
-    section.timeline{
+    div.timeline{
         padding-top: 100px;
     }
-    section.timeline p{
+    div.timeline p{
         font-size: 4.5rem;
         margin-bottom: 100px;
     }
-    section.timeline .l-box{
+    div.timeline .l-box{
         display: block;
     }
-    section.timeline .p-box{
+    div.timeline .p-box{
         display: none;
     }
 }
