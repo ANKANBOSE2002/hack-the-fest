@@ -1283,6 +1283,49 @@ section.events .row .box a img{
     height: 100%;
     width: 100%;
 }
+section.timeline{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-image: url("../img/gradient-blue-pink-abstract-art-wallpaper-preview.jpg"), linear-gradient(#eb01a5, #d13531); */
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%), url("../img/gradient-blue-pink-abstract-art-wallpaper-preview.jpg") no-repeat center center scroll;
+    background-size: 100% 100%;
+    padding-bottom: 45px;
+}
+section.timeline p{
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    background-image: url("../img/giphy.webp");
+    background-size: 70px 70px;
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: 900;
+    opacity:1;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: Arial;
+}
+section.timeline .l-box, section.timeline .p-box{
+    width: 300px;
+    height: 200px;
+    margin: 30px 0;
+    border-radius: 12px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: #0007;
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+    animation: colorchange 3s alternate-reverse infinite;
+    box-shadow: 0 0 16px rgba(237, 45, 45,1);
+}
+section.timeline .l-box{
+    display: none;
+}
+section.timeline .l-box img, section.timeline .p-box img{
+    height: 100%;
+    width: 100%;
+}
 @media (min-width:880px){
     .laptop{
         display: grid;
@@ -1300,5 +1343,18 @@ section.events .row .box a img{
     section.events p{
         font-size: 4.5rem;
         margin-bottom: 100px;
+    }
+    section.timeline{
+        padding-top: 100px;
+    }
+    section.timeline p{
+        font-size: 4.5rem;
+        margin-bottom: 100px;
+    }
+    section.timeline .l-box{
+        display: block;
+    }
+    section.timeline .p-box{
+        display: none;
     }
 }
