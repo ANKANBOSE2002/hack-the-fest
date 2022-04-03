@@ -22,7 +22,7 @@
       document.getElementById("phone-y").innerHTML="<p>-</p>";
       document.getElementById("phone-u").innerHTML="<p>T</p>";
       document.getElementById("phone-i").innerHTML="<p>H</p>";
-      document.getElementById("phone-o").innerHTML="<p>E</p>";
+      document.getElementById("phone-o").innerHTML=`<p><a href="#event-scroll" >E</a></p>`;
       document.getElementById("phone-f").innerHTML="<p>F</p>";
       document.getElementById("phone-g").innerHTML="<p>E</p>";
       document.getElementById("phone-h").innerHTML="<p>S</p>";
