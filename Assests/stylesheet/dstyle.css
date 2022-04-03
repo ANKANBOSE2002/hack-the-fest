@@ -1213,7 +1213,7 @@ section{
 }
 section.events{
     min-height: 100vh;
-    display: block;
+    display: none;
     /* background-image: url("../img/gradient-blue-pink-abstract-art-wallpaper-preview.jpg"), linear-gradient(#eb01a5, #d13531); */
     background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%), url("../img/gradient-blue-pink-abstract-art-wallpaper-preview.jpg") no-repeat center center scroll;
     background-size: 100% 100%;
@@ -1236,7 +1236,7 @@ section.events p{
 }
 
 .video-container{ 
-   display: grid;
+   display: none;
    place-items: center;
    width: 100%;
    height: 100vh;
@@ -1290,7 +1290,7 @@ section.timeline{
     /* background-image: url("../img/gradient-blue-pink-abstract-art-wallpaper-preview.jpg"), linear-gradient(#eb01a5, #d13531); */
     background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%), url("../img/gradient-blue-pink-abstract-art-wallpaper-preview.jpg") no-repeat center center scroll;
     background-size: 100% 100%;
-    padding-bottom: 45px;
+    padding: 45px 0;
 }
 section.timeline p{
     font-size: 3.5rem;
@@ -1309,8 +1309,6 @@ section.timeline p{
     font-family: Arial;
 }
 section.timeline .l-box, section.timeline .p-box{
-    width: 300px;
-    height: 200px;
     margin: 30px 0;
     border-radius: 12px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
@@ -1318,6 +1316,14 @@ section.timeline .l-box, section.timeline .p-box{
     box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
     animation: colorchange 3s alternate-reverse infinite;
     box-shadow: 0 0 16px rgba(237, 45, 45,1);
+}
+section.timeline .p-box{
+    /* width: 300px;
+    height: 500px; */
+}
+section.timeline .l-box{
+    width: 1000px;
+    height: 500px;
 }
 section.timeline .l-box{
     display: none;
