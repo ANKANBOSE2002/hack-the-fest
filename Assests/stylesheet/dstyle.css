@@ -1276,11 +1276,11 @@ section.events .row .box{
     box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
     animation: colorchange 3s alternate-reverse infinite;
     box-shadow: 0 0 16px rgba(237, 45, 45,1);
-    transition: all 0.25s ea`ase-in-out;
+    transition: all 0.25s ease-in-out;
 }
-section.events .row .box:hover{
-    transform: scale(2.05);
-    box-shadow: 0 0 16px rgba(237, 45, 45,1);
+section.events .row .box:hover img{
+    transform: scale(0.9);
+    filter: grayscale(100);
 }
 section.events .row .box a{
     text-decoration: none;
@@ -1288,6 +1288,7 @@ section.events .row .box a{
 section.events .row .box a img{
     height: 100%;
     width: 100%;
+    transition: all 0.25s ease-in-out;
 }
 div.timeline{
     min-height: 100vh;
