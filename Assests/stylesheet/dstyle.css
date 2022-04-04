@@ -1239,9 +1239,11 @@ section.events p{
 
 .video-container{ 
    display: none;
-   place-items: center;
+   display: flex;
+   flex-direction: column;
+   /* place-items: center; */
    width: 100%;
-   height: 100vh;
+   height: 100%;
    background: #ff0084;  /* fallback for old browsers */
    /* background: -webkit-linear-gradient(90deg,  #020251,#340166,#F0007B);  Chrome 10-25, Safari 5.1-6 */
    /* background: linear-gradient(90deg, #020251,#340166,#F0007B); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -1249,14 +1251,51 @@ section.events p{
    background: linear-gradient(145deg,#020540,#030759,#010326,#4C0144,#79004D);
    /* background-filter: blur(15px); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
    /* background-size: 200%; */
-
+   padding: 0 45px;
+   padding-top: 100px;
 
 }
-.video-container>iframe{
+.video-container .rowc{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
+}
+.video-container .rowc iframe{
     z-index: 20;
     display: block;
-    width: 90%;
-    height: 90%;
+    width: 80vw;
+    height: 70vh;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+.video-container p{
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    background-image: url("../img/giphy.webp");
+    background-size: 70px 70px;
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: 900;
+    opacity:1;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: Arial;
+}
+.video-container .txtbox{
+    width: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: Arial;
+    text-align: center;
+    /* margin-right: 45px; */
+    display: grid;
+    place-items: center;
+    font-weight:100;
+    line-height: 2rem;
 }
 section.events .row{
     display: flex;
@@ -1372,5 +1411,19 @@ div.timeline .p-box img{
     }
     div.timeline .p-box{
         display: none;
+    }
+    .video-container{
+        padding-bottom: 50px;
+    }
+    .video-container .rowc{
+        flex-direction: row;
+        height: 80vh;
+    }
+    .video-container .txtbox{
+        margin-right: 45px;
+    }
+    .video-container iframe{
+        width: 50%;
+        height: 90%;
     }
 }
