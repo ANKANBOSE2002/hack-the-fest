@@ -1239,7 +1239,6 @@ section.events p{
 
 .video-container{ 
    display: none;
-   display: flex;
    flex-direction: column;
    /* place-items: center; */
    width: 100%;
@@ -1291,7 +1290,6 @@ section.events p{
     font-size: 1.2rem;
     font-family: Arial;
     text-align: center;
-    /* margin-right: 45px; */
     display: grid;
     place-items: center;
     font-weight:100;
