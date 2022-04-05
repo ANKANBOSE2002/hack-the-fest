@@ -139,6 +139,7 @@
         keyanimations();
         document.getElementById("videosec").style.display="grid";
         document.getElementById("event-section").style.display="flex";
+        document.querySelector("footer").style.display="flex";
         AOS.init();
     }
 

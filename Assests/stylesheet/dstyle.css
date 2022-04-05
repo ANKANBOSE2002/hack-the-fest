@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Graduate&family=Stint+Ultra+Condensed&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent; 
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -1240,16 +1242,11 @@ section.events p{
 .video-container{ 
    display: none;
    flex-direction: column;
-   /* place-items: center; */
    width: 100%;
    height: 100%;
-   background: #ff0084;  /* fallback for old browsers */
-   /* background: -webkit-linear-gradient(90deg,  #020251,#340166,#F0007B);  Chrome 10-25, Safari 5.1-6 */
-   /* background: linear-gradient(90deg, #020251,#340166,#F0007B); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   background: -webkit-linear-gradient(145deg, #020540,#030759,#010326,#BF046B);  /* Chrome 10-25, Safari 5.1-6 */
+   background: #ff0084;  
+   background: -webkit-linear-gradient(145deg, #020540,#030759,#010326,#79004D);
    background: linear-gradient(145deg,#020540,#030759,#010326,#4C0144,#79004D);
-   /* background-filter: blur(15px); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   /* background-size: 200%; */
    padding: 0 45px;
    padding-top: 100px;
 
@@ -1379,6 +1376,30 @@ div.timeline .p-box img{
     height: 100%;
     width: 100%;
 }
+@media (max-width: 1110px) {
+    .video-container .rowc {
+        flex-direction: column !important;
+        align-items: center !important;
+        height: 100% !important;
+    }
+    div.timeline .l-box{
+        display: none !important;
+    }
+    div.timeline .p-box{
+        display: block !important;
+    }
+    .video-container .txtbox {
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.75em;
+    }
+    footer>div{
+        font-size: 15px !important;
+        padding: 0.25em !important;
+    }
+
+}
+    
 @media (min-width:880px){
     .laptop{
         display: grid;
@@ -1424,4 +1445,24 @@ div.timeline .p-box img{
         width: 50%;
         height: 90%;
     }
+}
+footer a{
+    text-decoration: none;
+    color: burlywood;
+    cursor: pointer;
+}
+footer a:hover{
+    color: rgb(189, 157, 116);
+}
+footer{
+    background: linear-gradient(145deg,#020540,#030759,#010326,#4C0144,#79004D);
+    display: none;
+    justify-content: space-between;
+}
+footer>div{
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-size:19px;
+    margin-inline: 0.5em;
+    padding: 1rem;
 }
