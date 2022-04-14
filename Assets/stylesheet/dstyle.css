@@ -1463,6 +1463,7 @@ footer>div{
     font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
     font-size:19px;
-    margin-inline: 0.5em;
+    margin-inline-start: 0.5em;
+    margin-inline-end: 0.5em;
     padding: 1rem;
 }
